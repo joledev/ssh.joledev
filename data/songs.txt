@@ -1,0 +1,580 @@
+# format: artist|title|album|year|listen_url
+# Scraped from 17 playlists - 578 songs
+Fritz Kreisler|Liebesleid (Love's Sorrow)|See||https://open.spotify.com/track/38EmZT3oWA6lJE0o4ajfG8
+Camille Saint-Saëns|Introduction and Rondo capriccioso in A minor, Op. 28|See||https://open.spotify.com/track/3leTyhTguxLryLUoRaxQ19
+SPECIAL OTHERS ACOUSTIC|WOLF|See||https://open.spotify.com/track/2xsyDwq9ZYm9kKYZF8gD4P
+Johan Åhlén|Chopin: Etude Op. 25 No. 11 in a Minor (Winter Wind)|See||https://open.spotify.com/track/6FOphUP2w3uGA9ZMN201Xc
+Rita Payés|A Rita|See||https://open.spotify.com/track/19NIjFhiWnEjv7CzjTmBbL
+Frédéric Chopin|Ballade No. 1 in G Minor, Op. 23|See||https://open.spotify.com/track/3XnR6bll287JuNE1hYVZRG
+Frédéric Chopin|Étude in C-Sharp Minor, Op. 10, No. 4|See||https://open.spotify.com/track/1j4hpprZEOZ0yHfxwM8O8I
+Claude Debussy|Clair De Lune|See||https://open.spotify.com/track/405HNEYKGDifuMcAZvqrqA
+Chet Baker|There Will Never Be Another You - Vocal Version|See||https://open.spotify.com/track/2zPANzQTt5Nbkg0eBPb7HI
+Ella Fitzgerald|Misty|See||https://open.spotify.com/track/4kF394GKEnI13QdZBM9mxM
+Ella Fitzgerald|Summertime|See||https://open.spotify.com/track/2gNjmvuQiEd2z9SqyYi8HH
+Chet Baker|Just Friends|See||https://open.spotify.com/track/7nFWZG3BdJekIElGe6cQAV
+Chet Baker|I Fall in Love Too Easily|See||https://open.spotify.com/track/7tFN6qGRZdXCLqSJzOEG7l
+Audrey Hepburn|Moon River|See||https://open.spotify.com/track/2EOo6tJpZIgmVQHmUv1dtg
+Frédéric Chopin|Chopin: Piano Sonata No. 2 in B-Flat Minor, Op. 35 "Funeral March": III. Marche funèbre. Lento|See||https://open.spotify.com/track/6JoT2QRzUZ8IpkamI6WkeN
+Dion|The Wanderer|See||https://open.spotify.com/track/4EoUALVwY4i7U6uKRhk8hr
+Skeeter Davis|The End of the World|See||https://open.spotify.com/track/5DTOOkooKFUvWj1XQTFa09
+SPECIAL OTHERS ACOUSTIC|My Home Town|See||https://open.spotify.com/track/116SIVu5jD36w8fZbnavPV
+Frédéric Chopin|Fantaisie-impromptu in C-Sharp Minor, Op. 66|See||https://open.spotify.com/track/1eCFAUlLEfLedgjIlwgXXB
+Mark Soskin|17|See||https://open.spotify.com/track/26IJ8aSyurthaJZ1uxYz3L
+Sergei Rachmaninoff|Rachmaninov: 13 Preludes, Op. 32: No. 10 in B Minor|See||https://open.spotify.com/track/147GiDi2qBfFoL1gHEMrfO
+Sergei Rachmaninoff|Études-tableaux, Op. 33: No. 2 in C Major. Allegro|See||https://open.spotify.com/track/1PJYvm0dlk0jxnEeTD3uUJ
+Johnny Cash|Hurt|Pseudo||https://open.spotify.com/track/28cnXtME493VX9NOw9cIUh
+King Crimson|21st Century Schizoid Man|Pseudo||https://open.spotify.com/track/173gp7NIXqk0MEo8K7Av4a
+TOOL|Forty Six & 2|Pseudo||https://open.spotify.com/track/6AioOohg4bQZFA4jIYQQ2r
+TOOL|Schism|Pseudo||https://open.spotify.com/track/55mJleti2WfWEFNFcBduhc
+Radiohead|Airbag|Pseudo||https://open.spotify.com/track/3OsUjkcv1C1v5udFhgRSFg
+David Bowie|Fame - 2016 Remaster|Pseudo||https://open.spotify.com/track/1PehfITh0TTRx3LkDdV4h3
+Galileo Galilei|ブルース|Thx||https://open.spotify.com/track/2K5bf4E12lOPBtSvkG927S
+Burbank|Sorry, I Like You|Thx||https://open.spotify.com/track/34MqDD3411uJQvXsqpZv3D
+ASIAN KUNG-FU GENERATION|Signal on the Street / 街頭のシグナル|Thx||https://open.spotify.com/track/310icc7cDHRadisH808uCX
+NOWEARMAN|Stars|Thx||https://open.spotify.com/track/2zSU6fQEno3t6xcvhVsKMU
+Mishka Shubaly|Death in Greenpoint (Xmas Mix)|Thx||https://open.spotify.com/track/2BJ2bA32TXup6SL8ZcLmoP
+Low Roar|I'm Leaving|Thx||https://open.spotify.com/track/2CLzs4DW6EAtCv6FC6Mbix
+Vetusta Morla|23 de Junio|Thx||https://open.spotify.com/track/3NolL8Ds5qRrYQSVUBKicn
+Gorillaz|Rhinestone Eyes|Thx||https://open.spotify.com/track/1foMv2HQwfQ2vntFf9HFeG
+ASIAN KUNG-FU GENERATION|新世紀のラブソング|Thx||https://open.spotify.com/track/39mPfNowOavI7zTGh0BEuE
+Straightener|BRAND NEW EVERYTHING|Thx||https://open.spotify.com/track/26kKtqAaMfvuR6BSMSejvJ
+Vetusta Morla|Iglús - En Directo|Thx||https://open.spotify.com/track/6KX41DVBblAKfUxOEcMY3Q
+Lng Sht|La Marcha De Los Tristes|Thx||https://open.spotify.com/track/57RKxckEkdbK7QXbN2ufzp
+Brand New|Sowing Season (Yeah)|Thx||https://open.spotify.com/track/0g5TiUXg4GP1aDDHygH2N6
+Galileo Galilei|Sea and The Darkness II (Totally Black)|Thx||https://open.spotify.com/track/5TsE3A3TU1qahrvZtCRzva
+Dan Deacon|When I Was Done Dying|Thx||https://open.spotify.com/track/69L4d5HlE0YOCwWFYVFGoW
+quickly|Getsomerest/sleepwell|Thx||https://open.spotify.com/track/2RycgtfFQZOPgEGrzBGE0j
+Galileo Galilei|ありがとう、ごめんね|Thx||https://open.spotify.com/track/1VyZ3RureprunEOWMes9sW
+茅原実里|みちしるべ|Thx||https://open.spotify.com/track/3dRVzK0PsqrT2WUuAGvitu
+Arianne|KOMM, SUSSER TOD - M-10 Director's Edit Version|Thx||https://open.spotify.com/track/0DI3WNmIyfi2GZLQwhYDQC
+The Derek Trucks Band|Younk Funk|A C I D||https://open.spotify.com/track/73fR8amFCwGgYKHQjoBiVs
+The Comet Is Coming|Summon The Fire|A C I D||https://open.spotify.com/track/5c44MldQ2CvroamP73V1lp
+Massive Attack|Black Milk|A C I D||https://open.spotify.com/track/1Rezzt36ybaT2ZbDZpv83D
+Phum Viphurit|Healing House|Mood||https://open.spotify.com/track/2DTOne6ZiLt8ZCtXS9VG97
+Jakob|All Your Love|Mood||https://open.spotify.com/track/7G7zCzvyqz39BFE7TqPM3O
+Los Retros|Someone To Spend Time With|Mood||https://open.spotify.com/track/6SE4JAo7T8C7XkFka5bbga
+The Marías|Un Millón|Mood||https://open.spotify.com/track/5dFG12OQz10CbUFZIYH0gv
+The Marías|DÁKITI – Spotify Singles|Mood||https://open.spotify.com/track/2y9xyQNtut1KeOHSSkuzik
+Gorillaz|Cracker Island (feat. Thundercat)|Mood||https://open.spotify.com/track/2W3ZpQg9i6lE6kmHbcdu9N
+Polyphia|ABC (feat. Sophia Black)|Mood||https://open.spotify.com/track/7D4lgMbSs10AQ0zX3ZldJc
+The Marías|Hush - Still Woozy Remix|Mood||https://open.spotify.com/track/4dGuRldChjvboZktprNJFM
+AURORA|Cure For Me|Mood||https://open.spotify.com/track/5QxK3RfBfLAqIJivw57u1a
+VALORANT|Fire Again|Mood||https://open.spotify.com/track/02rlJHfeHfAe7ozTFnDbGi
+VALORANT|Die For You|Mood||https://open.spotify.com/track/2lz3zjQ5QCVXiyOzIk02vW
+SHISHAMO|ハッピーエンド|Mood||https://open.spotify.com/track/5gUzLLcqBLpQlIK6QgyCN3
+League of Legends|Burn It All Down|Mood||https://open.spotify.com/track/0ked784BOZ1JtRVHux98jE
+Ginger Root|Weather|Mood||https://open.spotify.com/track/2D3gvohUyOfXIVX6Mvhqae
+Kenshi Yonezu|KICK BACK|Mood||https://open.spotify.com/track/3khEEPRyBeOUabbmOPJzAG
+MAXIMUM THE HORMONE|HAWATARI NIOKU CENTI [2-hundred-million-centimeter-long blades] - TV edit|Mood||https://open.spotify.com/track/1lySGuhlcZUJxLA5W5Bo7k
+KALI|Too Tired|Mood||https://open.spotify.com/track/3CkaqnqHF4NCMypM5AcVqq
+Iyowa|kyu-kurarin|Love Girls cause I'm a Girl||https://open.spotify.com/track/72wehM3q2RVZb4XLmAkyTr
+ano|ちゅ、多様性。|Love Girls cause I'm a Girl||https://open.spotify.com/track/5KLL3cZEyuSJRvyS84o4Df
+Azari|Shadow Shadow|Love Girls cause I'm a Girl||https://open.spotify.com/track/3kKrLW9Fi7FdPi5oeLER7U
+Kanaria|QUEEN|Love Girls cause I'm a Girl||https://open.spotify.com/track/32zpHDchUY83w80C8mMtOs
+INABAKUMORI|Floating Moonlight City|Love Girls cause I'm a Girl||https://open.spotify.com/track/1TVubI1l5n3IYo7MTOIFyM
+Phenotas|スピーカーボーイ|Love Girls cause I'm a Girl||https://open.spotify.com/track/7dd5t8BwNlVSnBQuD0P9BP
+Soutaiseiriron|Kininaru Ano Ko|Love Girls cause I'm a Girl||https://open.spotify.com/track/5BIl5T1vtqE4tRk6eMpBdk
+Crystal Tea|There There|Love Girls cause I'm a Girl||https://open.spotify.com/track/24lQhxAys0CRnrExqdVsVq
+Kaneko Ayano|ロマンス宣言|Love Girls cause I'm a Girl||https://open.spotify.com/track/7ph7HRUsxYcKLRFTaYCQYQ
+jon-YAKITORY|AntiSystem's (feat. Ado)|Love Girls cause I'm a Girl||https://open.spotify.com/track/3ixFouonAtRdwg4FiVN9z9
+meiyo|なにやってもうまくいかない feat.asmi|Love Girls cause I'm a Girl||https://open.spotify.com/track/6QLMizE79f7VfKKnuMYxez
+POLKADOT STINGRAY|リドー|Love Girls cause I'm a Girl||https://open.spotify.com/track/36K1AFSLlk3agjXQLMNZk7
+yama|色彩|Love Girls cause I'm a Girl||https://open.spotify.com/track/1uveEvgKX4irLcp1BUTIFD
+Soutaiseiriron|さわやか会社員|Love Girls cause I'm a Girl||https://open.spotify.com/track/7wAhg1bclLYzOjAn2eCxPz
+MAISONdes|あいうえ|Love Girls cause I'm a Girl||https://open.spotify.com/track/5twY3ucZMPD3iUkmlbo841
+Cö shu Nie|undress me|Love Girls cause I'm a Girl||https://open.spotify.com/track/1bwnXBfIQFIBgBtsBADycD
+みゆな|埋葬|Love Girls cause I'm a Girl||https://open.spotify.com/track/0OOb0m0zdCZRl0suTEmMgV
+DECO*27|ゾンビ|Love Girls cause I'm a Girl||https://open.spotify.com/track/06yQXWLaO8YVpXHXh55dLj
+Rocket Punch|JUICY|Love Girls cause I'm a Girl||https://open.spotify.com/track/3u5G198W9Bnp0pmehuw53F
+ano|Peek a boo|Love Girls cause I'm a Girl||https://open.spotify.com/track/4zCqXPmv2ZBRREdsenlWvu
+Phenotas|すてきな人に出会ったとき|Love Girls cause I'm a Girl||https://open.spotify.com/track/6hSJHJkFTu9pWUQel47rOb
+Lie and a Chameleon|PLANET BLUE|Love Girls cause I'm a Girl||https://open.spotify.com/track/7qhh7M7zuBeJ96ZxbfaIVY
+Kinoshita Momoka|Bad Friend|Love Girls cause I'm a Girl||https://open.spotify.com/track/0pfoXarioa8yBr8IN7OL5d
+SHISHAMO|恋する - 10YEARS THANK YOU|Love Girls cause I'm a Girl||https://open.spotify.com/track/0vbLzWi64zpd3bEHaETY9D
+WEDNESDAY CAMPANELLA|Maneki Neko|Love Girls cause I'm a Girl||https://open.spotify.com/track/0bzF3w5jIvYOHmMkMd3GaL
+peanut butters|めちゃポップ|Love Girls cause I'm a Girl||https://open.spotify.com/track/7mcxy7kzOVnNFf6Gm7jOSy
+Tokyo Incidents|透明人間|Love Girls cause I'm a Girl||https://open.spotify.com/track/7IUpgtokm66oFFIvcFsAq6
+WEDNESDAY CAMPANELLA|Hot Pot Commander|Love Girls cause I'm a Girl||https://open.spotify.com/track/1dXJnQPtOBDqzmrYKrjv22
+HARU NEMURI|rock 'n' roll wa shinanai with totsuzenshounen|Love Girls cause I'm a Girl||https://open.spotify.com/track/5FoiQ2EieChMpkh4dx23Xs
+SHISHAMO|なんとなく。|Love Girls cause I'm a Girl||https://open.spotify.com/track/685E7VfekdXLLM2KB6zpav
+POLKADOT STINGRAY|どうでもいいよ|Love Girls cause I'm a Girl||https://open.spotify.com/track/1rVCDraEhrRzIue36gNu6x
+月裏|砂糖じかけの電影街 (feat. GUMI)|Love Girls cause I'm a Girl||https://open.spotify.com/track/7woJbv6ZxTfNM2eqbTNxYH
+POLKADOT STINGRAY|hide and seek|Love Girls cause I'm a Girl||https://open.spotify.com/track/4eihC5rEwGrMFQ8pJDnLVk
+Kaneko Ayano|予感|Love Girls cause I'm a Girl||https://open.spotify.com/track/4tKrrFD7CQt8fPU7qUmV5E
+ネクライトーキー|北上のススメ|Love Girls cause I'm a Girl||https://open.spotify.com/track/4mz73tXbsKITt5gc3OQOqO
+POLKADOT STINGRAY|SURF|Love Girls cause I'm a Girl||https://open.spotify.com/track/4ExTIDgZTy6C4eHxEqMj8k
+peanut butters|メロンD|Love Girls cause I'm a Girl||https://open.spotify.com/track/66rkjSPnx0NZuBswiOjj1E
+式浦躁吾|just saying, the body is honest.|Love Girls cause I'm a Girl||https://open.spotify.com/track/4z1O8W35JfmFjPlD9KYvid
+MASS OF THE FERMENTING DREGS|delusionalism|Love Girls cause I'm a Girl||https://open.spotify.com/track/10FC7rI5KzGmyTHowOoebw
+tricot|混ぜるな危険|Love Girls cause I'm a Girl||https://open.spotify.com/track/3WWslYheowgYhLk1wrW0T0
+SHISHAMO|好き好き！|Love Girls cause I'm a Girl||https://open.spotify.com/track/3aMpIgo7DfBl7Hk6i8ncke
+City Girl|HEARTBREAKER CLUB|Love Girls cause I'm a Girl||https://open.spotify.com/track/6Rpk7fmD3TWTBfJnIpjiZp
+YOASOBI|夜に駆ける|Love Girls cause I'm a Girl||https://open.spotify.com/track/6MCjmGYlw6mQVWRFVgBRvB
+LustSickPuppy|Goatmeal|Love Girls cause I'm a Girl||https://open.spotify.com/track/2X8sPolkXBmnjgtJkA03Vy
+Kero Kero Bonito|Big City|Love Girls cause I'm a Girl||https://open.spotify.com/track/2gDXQb8n9zQgFA2TrjMFD8
+Lucie|Lucky|Love Girls cause I'm a Girl||https://open.spotify.com/track/5jkuq8q8itgaOxZtg8fsT7
+Ashnikko|Slumber Party (feat. Princess Nokia)|Love Girls cause I'm a Girl||https://open.spotify.com/track/11ZulcYY4lowvcQm4oe3VJ
+Daniel Olsén|Sayonara Wild Heart|Love Girls cause I'm a Girl||https://open.spotify.com/track/0Tttk1LkoXQvIsSQZe7XFd
+SHISHAMO|ごめんね、恋心|Love Girls cause I'm a Girl||https://open.spotify.com/track/1hO84ZDSMgajrx1Ku31SrR
+Drinking Boys and Girls Choir|Linda Linda - Japanese|Love Girls cause I'm a Girl||https://open.spotify.com/track/0cbjZV5Ttagjfn723XO5en
+wowaka|Rollin’ Girl|Love Girls cause I'm a Girl||https://open.spotify.com/track/5VJPBUVqxzLWmzzlJZy4r2
+4s4ki|Black Hole|Love Girls cause I'm a Girl||https://open.spotify.com/track/4KF2GlR5NvioL25d88oREm
+4s4ki|I've always wanna kill you|Love Girls cause I'm a Girl||https://open.spotify.com/track/28RRrKJdCw8vacige8NJiq
+4s4ki|35.5|Love Girls cause I'm a Girl||https://open.spotify.com/track/3pZwFRpEvBtlmvmFiLeVH8
+4s4ki|I picked up a prostitute's iPhone (feat. Gokou Kuyt & maeshima soshi)|Love Girls cause I'm a Girl||https://open.spotify.com/track/5oO4McF6Xhk1gpHrJqFs1h
+4s4ki|Platonic (feat. gu^2)|Love Girls cause I'm a Girl||https://open.spotify.com/track/7exmlh6VlEt0oEbZrfFb26
+SHISHAMO|恋に落ちる音が聞こえたら|Love Girls cause I'm a Girl||https://open.spotify.com/track/1cFF0KjLCn4t0fYIzY1zSE
+ORESAMA|ワンダードライブ|Love Girls cause I'm a Girl||https://open.spotify.com/track/22bp6FL6mzqtGDB5nJHLMn
+PASSEPIED|マッカメッカ|Love Girls cause I'm a Girl||https://open.spotify.com/track/56DoXdZ66AItz9FEQEbB6D
+the peggies|花火|Love Girls cause I'm a Girl||https://open.spotify.com/track/25XqyPPpj3bxBHeIVdgQuo
+the peggies|君のせい|Love Girls cause I'm a Girl||https://open.spotify.com/track/7jEwBMtA7gM43NxiuvfF3h
+Yunomi|ジェリーフィッシュ (feat. ローラーガール)|Love Girls cause I'm a Girl||https://open.spotify.com/track/6kIivltIxJscvk682sTXoV
+Tokyo Incidents|キラーチューン|Love Girls cause I'm a Girl||https://open.spotify.com/track/7bDgXhmpzHjvWx4qrtFaDS
+SILENT SIREN|Pandora|Love Girls cause I'm a Girl||https://open.spotify.com/track/41Mm5ufinb6yjCZfJKxXql
+POLKADOT STINGRAY|化身|Love Girls cause I'm a Girl||https://open.spotify.com/track/5I9mt1b9n4y9fim4qsYsTq
+Kero Kero Bonito|Heard a Song|Love Girls cause I'm a Girl||https://open.spotify.com/track/4cyjLMvPunnFEXB0Gvz5py
+Tia|The Glory Days|Love Girls cause I'm a Girl||https://open.spotify.com/track/1XwrOMkzPExJHjSOfUaUy7
+Moe Shop|Notice|Love Girls cause I'm a Girl||https://open.spotify.com/track/4n0sVfRnd0UJsqcbPj7GqN
+Chara|楽しい蹴伸び|Love Girls cause I'm a Girl||https://open.spotify.com/track/4tWlxWsrnxmeBLjxQaPflR
+Kinokoteikoku|国道スロープ|Love Girls cause I'm a Girl||https://open.spotify.com/track/7upG8kgnfF4yfaOGNKHXJg
+Reol|B12|Love Girls cause I'm a Girl||https://open.spotify.com/track/4I7Ifw9MXGipCFQntyn7td
+H△G|Colorful|Love Girls cause I'm a Girl||https://open.spotify.com/track/5jKaY1yceqsskkblLzopGF
+物語シリーズ|もうそう☆えくすぷれす|Love Girls cause I'm a Girl||https://open.spotify.com/track/0AMPzoNXlZxOQfcnajreKx
+Moe Shop|GHOST FOOD (feat. TORIENA)|Love Girls cause I'm a Girl||https://open.spotify.com/track/3vVrmzJ90RADY5oydu2yWZ
+PSYQUI|ヒステリックナイトガール|Love Girls cause I'm a Girl||https://open.spotify.com/track/1poGez6IaTb1gtJxkXdlb8
+SHISHAMO|明日も|Love Girls cause I'm a Girl||https://open.spotify.com/track/2GICOigS4ByugDisRegs3M
+Nayutalien|Alien Alien|Love Girls cause I'm a Girl||https://open.spotify.com/track/3va7Q99A1EJk8eAZ2DV74v
+SHISHAMO|君と夏フェス|Love Girls cause I'm a Girl||https://open.spotify.com/track/74zARC4MuJSrlq0QaaE13j
+POLKADOT STINGRAY|FREE|Love Girls cause I'm a Girl||https://open.spotify.com/track/0ezNygbCe5v2dN6F9Vo87v
+majiko|命に嫌われている。|Love Girls cause I'm a Girl||https://open.spotify.com/track/2lXu7SNGIKHJ8EV2EetYFa
+UPLIFT SPICE|オメガリズム|Love Girls cause I'm a Girl||https://open.spotify.com/track/6QnL8A6cIDFHXEdqEaHfrm
+Perfume|コミュニケーション|Love Girls cause I'm a Girl||https://open.spotify.com/track/3QwkPWlV0Y75z2LHcTBOH2
+fhána|Somewhen, Some Worlds with You|Love Girls cause I'm a Girl||https://open.spotify.com/track/0eAGD0LHLBLeHkkJscEmuy
+Reol|コノヨLoading...|Love Girls cause I'm a Girl||https://open.spotify.com/track/5ZBs9dRavxKAS23WT1MwkQ
+YUI|again|Love Girls cause I'm a Girl||https://open.spotify.com/track/6jBNUlTbv3fyn5t4izsdMa
+CHiCO with HoneyWorks|世界は恋に落ちている|Love Girls cause I'm a Girl||https://open.spotify.com/track/2gjS4IldZTcJOntzMW6oh8
+TUYU|Trapped in the past|Love Girls cause I'm a Girl||https://open.spotify.com/track/5cGTr7yx9wo6NkgQV4eqdW
+TUYU|Being low as dirt, taking what's important from me|Love Girls cause I'm a Girl||https://open.spotify.com/track/1LNGuCg01CHg9ErApmz92R
+ZUTOMAYO|正義|Love Girls cause I'm a Girl||https://open.spotify.com/track/00mMDaEYdOu7naMhemWrcJ
+the peggies|LOVE TRIP (2019)|Love Girls cause I'm a Girl||https://open.spotify.com/track/4q5DMM337duBBjtcQrz6fV
+SILENT SIREN|フジヤマディスコ|Love Girls cause I'm a Girl||https://open.spotify.com/track/5VBjgiTYtgcSwLa2osNX3P
+Daoko|ダイスキ with TeddyLoid|Love Girls cause I'm a Girl||https://open.spotify.com/track/4koA8IVYaHiBuCh8iKhSM9
+ZUTOMAYO|勘冴えて悔しいわ|Love Girls cause I'm a Girl||https://open.spotify.com/track/7zbfS30vKiHU8oBs6Wi1Qp
+the peggies|スタンドバイミー|Love Girls cause I'm a Girl||https://open.spotify.com/track/053ydqZPlzfOkFsRmY8SNL
+Daoko|さみしいかみさま|Love Girls cause I'm a Girl||https://open.spotify.com/track/1jsuNY2norISRscbYj5ISS
+SHISHAMO|中庭の少女たち|Love Girls cause I'm a Girl||https://open.spotify.com/track/1YrU8ExqF04ygegVoOOoFU
+Ho - Kago Tea Time|Singing!|Love Girls cause I'm a Girl||https://open.spotify.com/track/5ftfX6pKdedXPrbLXYPl0B
+Twenty One Pilots|House of Gold|idk frfr||https://open.spotify.com/track/36tghkPg1AO4HsAzo6YpPp
+Cage The Elephant|Trouble|idk frfr||https://open.spotify.com/track/5n0CTysih20NYdT2S0Wpe8
+Hozier|Jackie And Wilson|idk frfr||https://open.spotify.com/track/5xo1Gj4WTssjQgQ0w03cf2
+Wallows|Scrawny|idk frfr||https://open.spotify.com/track/1pNUmVxDiE8t6P1XxcZAv8
+Paramore|Hard Times|idk frfr||https://open.spotify.com/track/0w5Bdu51Ka25Pf3hojsKHh
+Arctic Monkeys|Brianstorm|idk frfr||https://open.spotify.com/track/7f9I5WdyXm5q1XqnSYgQZb
+Red Hot Chili Peppers|By the Way|idk frfr||https://open.spotify.com/track/1f2V8U1BiWaC9aJWmpOARe
+Red Hot Chili Peppers|Snow (Hey Oh)|idk frfr||https://open.spotify.com/track/2aibwv5hGXSgw7Yru8IYTO
+The Drums|Money|idk frfr||https://open.spotify.com/track/3VIJBrMpvimHEw5wtPh2wB
+boy pablo|Feeling Lonely|idk frfr||https://open.spotify.com/track/5uIRujGRZv5t4fGKkUTv4n
+alt-J|Breezeblocks|idk frfr||https://open.spotify.com/track/3n69hLUdIsSa1WlRmjMZlW
+Twenty One Pilots|Tear in My Heart|idk frfr||https://open.spotify.com/track/3bnVBN67NBEzedqQuWrpP4
+Two Door Cinema Club|What You Know|idk frfr||https://open.spotify.com/track/3GBApU0NuzH4hKZq4NOSdA
+Cage The Elephant|Cold Cold Cold|idk frfr||https://open.spotify.com/track/1Q3t9fWvHUXKsMmpD2XpUu
+Wallows|Pleaser|idk frfr||https://open.spotify.com/track/11zf7m4vw9Ze7cer9Nyhk1
+Young the Giant|Silvertongue|idk frfr||https://open.spotify.com/track/0yTJtxZJ5VLfBEHhiNUNeY
+The Jungle Giants|She's a Riot|idk frfr||https://open.spotify.com/track/4xy9nsO8EX4OR0c6lf0WFu
+Cage The Elephant|Cigarette Daydreams|idk frfr||https://open.spotify.com/track/2tznHmp70DxMyr2XhWLOW0
+Cage The Elephant|Spiderhead|idk frfr||https://open.spotify.com/track/5r5Lj2MkgwQJz6TaBdL865
+GROUPLOVE|Raspberry|idk frfr||https://open.spotify.com/track/1F5A4LpF8ylUVtPoMAvNvn
+Two Door Cinema Club|Undercover Martyn|idk frfr||https://open.spotify.com/track/0bePGTDjn0XuEKoN7rOMvV
+Foster The People|Lotus Eater|idk frfr||https://open.spotify.com/track/6ReKt5x6FVUXTMdWNC6GAQ
+Twenty One Pilots|We Don't Believe What's on TV|idk frfr||https://open.spotify.com/track/22OqansuvEMQu9W0EfiGTI
+Bad Suns|Off She Goes|idk frfr||https://open.spotify.com/track/277XsneDiv30dhONPCOmrF
+Vampire Weekend|A-Punk|idk frfr||https://open.spotify.com/track/2DrGEaqoruCSn0FffWCf5O
+Cage The Elephant|Come a Little Closer|idk frfr||https://open.spotify.com/track/4sebUbjqbcgDSwG6PbSGI0
+Hippo Campus|Suicide Saturday|idk frfr||https://open.spotify.com/track/0scQIzgcOhnmfqfOTpRUFH
+Hippo Campus|Violet|idk frfr||https://open.spotify.com/track/6NbLlTH71bOgfTtFVY9HRm
+Wild Party|OutRight|idk frfr||https://open.spotify.com/track/6TGapnqEUkkSBanKyn5qYy
+Saint Motel|Butch|idk frfr||https://open.spotify.com/track/5ZQWNRoJsfkByZFHqCB92J
+Catfish and the Bottlemen|Kathleen|idk frfr||https://open.spotify.com/track/1MHYAqWWdDRePmnqORynrq
+Peach Pit|Seventeen|idk frfr||https://open.spotify.com/track/0SBariQWfKjoslW2XSIFOm
+Peach Pit|Drop the Guillotine|idk frfr||https://open.spotify.com/track/1gpBDeONibvJyQYEv5HJh9
+CRUISR|All Over|idk frfr||https://open.spotify.com/track/7IDKIfRltN07TdsdTVtRHh
+Bad Suns|Daft Pretty Boys|idk frfr||https://open.spotify.com/track/41d2Q6DHcM20OdzynkRtvf
+The Wombats|Pink Lemonade|idk frfr||https://open.spotify.com/track/1OqbX2MZ6ZzWP7HjMHbdkp
+Arctic Monkeys|Knee Socks|idk frfr||https://open.spotify.com/track/2LGdO5MtFdyphi2EihANZG
+half•alive|The Fall|idk frfr||https://open.spotify.com/track/2VgQLPaAPaJRIXeL0FIW2q
+The Strokes|The Adults Are Talking|idk frfr||https://open.spotify.com/track/5ruzrDWcT0vuJIOMW7gMnW
+Vaundy|踊り子|Redflag||https://open.spotify.com/track/4xk70Qur2QeRmWIzWPC63V
+Ginger Root|Loretta|Redflag||https://open.spotify.com/track/3eZqBNHlNA4lUsbAB6UmvD
+indigo la End|夏夜のマジック|Redflag||https://open.spotify.com/track/144pIQC3mpmUkZXMt8fIwb
+Gesu No Kiwami Otome|アオミ|Redflag||https://open.spotify.com/track/5Om63xY8qz7BTG5HSoTtwE
+Lamp|ゆめうつつ|Redflag||https://open.spotify.com/track/1GTC0DN9LGOdP0NdvoHyX7
+Sunny Day Service|Kokoro ni Kumo wo Motsu Shonen|Redflag||https://open.spotify.com/track/0fPRu3MqUxtqZtfKeZf9Ro
+Meaningful Stone|Dancing in the rain|Redflag||https://open.spotify.com/track/3d28TKE1fVNrG7D4xH7Q7k
+mitsume|あこがれ|Redflag||https://open.spotify.com/track/67p2FNw6LervXFDE36ECAt
+KIRINJI|killer tune kills me|Redflag||https://open.spotify.com/track/2JCdUwmGDO3SBkhwkfRaLr
+Helsinki Lambda Club|Good News Is Bad News|Redflag||https://open.spotify.com/track/1mF4n4AYVZJE8q8MKSt45g
+HYUKOH|Graduation|Redflag||https://open.spotify.com/track/0wDz1vVrbkoZbS8axgiWZk
+Lamp|Windy Afternoon|Redflag||https://open.spotify.com/track/3ggXaHkbtPpTWIa4ljIbUr
+Lamp|二十歳の恋|Redflag||https://open.spotify.com/track/1EA40FX9aBaKIXwIp83WzL
+Meaningful Stone|Beep-Boop, Beep-Boop|Redflag||https://open.spotify.com/track/579uHOz2E7JtV3YNNOwJqu
+Ginger Root|Le château|Redflag||https://open.spotify.com/track/3KhPLLQjXodVQU9FoIlCUh
+Anri|悲しみがとまらない　I CAN'T STOP THE LONELINESS|Redflag||https://open.spotify.com/track/3FYDqY5BRtx3IVSaiQZSze
+Vaundy|Tokyo Flash|Redflag||https://open.spotify.com/track/1Sem1dIkjX7tA8Nf5hEy8R
+Anri|Remember Summer Days|Redflag||https://open.spotify.com/track/1qUo7d5lAOclNVbTUY0A2R
+Kenshi Yonezu|ごめんね|Redflag||https://open.spotify.com/track/4dvRQjQCOdtEaYH86BEs36
+Take Van|In My Head|Context||https://open.spotify.com/track/5a5q1sFcpMoPRk5fRGWq2W
+The Marías|No One Noticed|Context||https://open.spotify.com/track/3siwsiaEoU4Kuuc9WKMUy5
+Steve Lacy|Out of Me Head|Context||https://open.spotify.com/track/3G9tyuUoBVNTDXY0icrUVf
+Toco|Bom Motivo|Context||https://open.spotify.com/track/0XdhwShrfjvtaaU1QIhpPe
+Still Woozy|Again|Context||https://open.spotify.com/track/0ZU7dTp8rNR1Bpc0jMcEAD
+Luna Li|Misery Moon|Context||https://open.spotify.com/track/5EwRVuWJpNNMYM4UkT561o
+Still Woozy|Lemon|Context||https://open.spotify.com/track/2eHo0df4b8eRW63X6N8Hxs
+Orion Sun|intro|Context||https://open.spotify.com/track/6HSTJbYzJCK5jKz7hrsvQh
+Orion Sun|Ne Me Quitte Pas (Don't Leave Me)|Context||https://open.spotify.com/track/7DYkWTA0ckaqm2MFfAIlQr
+Sports|Baby Baby|Context||https://open.spotify.com/track/41HyMiZSBLGlfopnDE7Ppc
+Hotel Ugly|Action Figures Fighting|Context||https://open.spotify.com/track/3Dovyp9MbclWO5nus9qH41
+Billie Eilish|LUNCH|Context||https://open.spotify.com/track/629DixmZGHc7ILtEntuiWE
+Ralph Castelli|Morning Sex|Context||https://open.spotify.com/track/2fGRJzoiYJYAzlQAyBONMb
+Orion Sun|Antidote|Context||https://open.spotify.com/track/1NlGXcWeUSe1s3IgRKcqmB
+Billie Eilish|BIRDS OF A FEATHER|Context||https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB
+Steve Lacy|Uuuu|Context||https://open.spotify.com/track/6M0EP76qW9TG4SNU0agu94
+Steve Lacy|C U Girl|Context||https://open.spotify.com/track/6FBzhcfgGacfXF3AmtfEaX
+Saint Motel|Cold Cold Man|Context||https://open.spotify.com/track/6RKGBcDtgzXx21zUjpeu6F
+Men I Trust|Oncle Jazz|Context||https://open.spotify.com/track/204t5SErksNRHRhU52g5JF
+maye|Tú|Context||https://open.spotify.com/track/1jecO8NeYLsVWVptITz4c1
+Kendrick Lamar|Alright|V||https://open.spotify.com/track/3iVcZ5G6tvkXZkZKlMpIUs
+Kendrick Lamar|XXX. FEAT. U2.|V||https://open.spotify.com/track/4iYRa2btalAzPZoSYfROqF
+Baby Keem|family ties (with Kendrick Lamar)|V||https://open.spotify.com/track/3QFInJAm9eyaho5vBzxInN
+Tyler|Rah Tah Tah|V||https://open.spotify.com/track/5RePVWy39tLpHH0WwXgBsK
+Tyler|Sticky (feat. GloRilla, Sexyy Red & Lil Wayne)|V||https://open.spotify.com/track/3tFed7YsjGnIfxeLEQwx3R
+Tyler|Thought I Was Dead (feat. ScHoolboy Q & Santigold)|V||https://open.spotify.com/track/2aYHxnMF2umAavtgBvmkY1
+ミドリ|ゆきこさん|OHNO||https://open.spotify.com/track/7EzsrJjJQBXRPiAPijADtG
+ミドリ|お猿|OHNO||https://open.spotify.com/track/1R6knwr1q0ylkanX1mBe75
+ミドリ|ちはるの恋|OHNO||https://open.spotify.com/track/3ojutDH17deNW7QFJALS5G
+ミドリ|ひみつの2人|OHNO||https://open.spotify.com/track/3Upe0iWVwbb7k3ef6rlNZP
+ミドリ|ハウリング地獄|OHNO||https://open.spotify.com/track/0DBLl2nvhOWToq2749XEUT
+Otoboke Beaver|Don't light my fire|OHNO||https://open.spotify.com/track/18ThXUp9jiQg26iD1w8reE
+Otoboke Beaver|akimahenka|OHNO||https://open.spotify.com/track/3F1rYPkdH3iKfHweax3JDp
+Snõõper|Running|OHNO||https://open.spotify.com/track/7zsSpz2UBsQTMLOeWdtKPz
+Hakushi Hasegawa|Doku|OHNO||https://open.spotify.com/track/7LJqyke8utk9ddmFchx3Z6
+Polyphia|G.O.A.T.|Wa wA||https://open.spotify.com/track/2aVAlLn2uez3xpcXxdiVek
+Polyphia|Loud|Wa wA||https://open.spotify.com/track/0NQX8uIipe2SbgjgKyfq59
+Polyphia|Icronic|Wa wA||https://open.spotify.com/track/5QZ7TEd3h6OysmdMHm0Mfj
+Polyphia|Goose|Wa wA||https://open.spotify.com/track/2v7iJcMoQcN40fK9XEb42q
+Polyphia|40oz|Wa wA||https://open.spotify.com/track/3v3VFa7Dt32gNR27jfw7DG
+Polyphia|Champagne|Wa wA||https://open.spotify.com/track/6ZDHFz6h8d93EPAIq5hDuE
+Polyphia|Memory|Wa wA||https://open.spotify.com/track/4Hedffa7sZORyMQ2045rZc
+Polyphia|James Franco|Wa wA||https://open.spotify.com/track/66LLzXPLk4mdixtV21DKnS
+Polyphia|Playing God|Wa wA||https://open.spotify.com/track/3nBGFgfRQ8ujSmu5cGlZIU
+Polyphia|Nightmare|Wa wA||https://open.spotify.com/track/6DZb3JYHOAV0RR0VTEMCIn
+Polyphia|Ivory|Wa wA||https://open.spotify.com/track/6GIJiLJVQumva9G5khVXH6
+Plini|Every Piece Matters|Wa wA||https://open.spotify.com/track/25RDHbzKzGSUefENv5uz9M
+Plini|Heart|Wa wA||https://open.spotify.com/track/10odSvMUn94qjDoAdVldFZ
+Plini|Selenium Forest|Wa wA||https://open.spotify.com/track/18pIsa1XH5Eap4SBcSH4Xd
+Intervals|Epiphany|Wa wA||https://open.spotify.com/track/1Wdd8Xku4srY0TEfPBQE7U
+Intervals|Touch and Go|Wa wA||https://open.spotify.com/track/3nDOvQvA8iPamdULGubIQE
+Intervals|Fable|Wa wA||https://open.spotify.com/track/6Rn4x7FQ8iAmlaBIxeiSFo
+SPECIAL OTHERS|AIMS|Wa wA||https://open.spotify.com/track/0Qsr9UPBy9X0DTwROJZYhO
+SPECIAL OTHERS|beautiful world|Wa wA||https://open.spotify.com/track/42ztlQhQwRlphYzE5nKAWd
+SPECIAL OTHERS|Hawaiian Secret Beat|Wa wA||https://open.spotify.com/track/4KJNauzi1VcdYBVX4cL1F1
+SPECIAL OTHERS|Dance Festival|Wa wA||https://open.spotify.com/track/2ovZpiOnnGARJ6LokTz5yb
+SPECIAL OTHERS|Laurentech|Wa wA||https://open.spotify.com/track/14NAtZdfZteZTKiEPoBYyQ
+Covet|falkor|Wa wA||https://open.spotify.com/track/3nGyTdjyMC0xT2TA7Q4Ru4
+Polyphia|O.D.|Wa wA||https://open.spotify.com/track/1U2yqd3Bp4vBuIQ3NGfS6C
+The Marías|I Don't Know You|Un wey en un reel me dijo||https://open.spotify.com/track/06cqIVC8kRAT02qfHQT65v
+The Marías|Cariño|Un wey en un reel me dijo||https://open.spotify.com/track/16gJmoOqRt2lKmlXtDpWgH
+The Marías|Over the Moon|Un wey en un reel me dijo||https://open.spotify.com/track/02wNtFxlr9dLmZXKT5TIF5
+Clairo|Sofia|Un wey en un reel me dijo||https://open.spotify.com/track/0za55KLGfhCOr2TC4RM6dr
+Clairo|Bags|Un wey en un reel me dijo||https://open.spotify.com/track/56NEihhw1BsIgBBzfvcE76
+Clairo|Flaming Hot Cheetos|Un wey en un reel me dijo||https://open.spotify.com/track/7iKcCH5vpjZgCJRNm7yD3L
+Billie Eilish|idontwannabeyouanymore|Un wey en un reel me dijo||https://open.spotify.com/track/41zXlQxzTi6cGAjpOXyLYH
+Billie Eilish|ocean eyes|Un wey en un reel me dijo||https://open.spotify.com/track/2uIX8YMNjGMD7441kqyyNU
+Billie Eilish|TV|Un wey en un reel me dijo||https://open.spotify.com/track/3GYlZ7tbxLOxe6ewMNVTkw
+Men I Trust|Show Me How|Un wey en un reel me dijo||https://open.spotify.com/track/75IQVo8hqI1iwVZyvkN2VT
+Men I Trust|Lauren|Un wey en un reel me dijo||https://open.spotify.com/track/62zFcDLa1CjCY9yp6VO4ga
+Men I Trust|Seven|Un wey en un reel me dijo||https://open.spotify.com/track/5QvditjxADt1HMKPgaMjJm
+Mitski|Nobody|Un wey en un reel me dijo||https://open.spotify.com/track/2P5yIMu2DNeMXTyOANKS6k
+Mitski|First Love/Late Spring|Un wey en un reel me dijo||https://open.spotify.com/track/3sslYZcFKtUvIEWN9lADgr
+Mitski|Love Me More|Un wey en un reel me dijo||https://open.spotify.com/track/4PUT0cH2iggaje5hTJZeGe
+Bratty|Honey, No Estás|Un wey en un reel me dijo||https://open.spotify.com/track/4tiMBMyoWSRPmLHg16VpUs
+Bratty|Quédate|Un wey en un reel me dijo||https://open.spotify.com/track/7tm1BebE71tHtJmbJKvvxq
+Bratty|tarde|Un wey en un reel me dijo||https://open.spotify.com/track/2snboRLa5IkMkMAohyxEYN
+Vanessa Zamora|Malas Amistades|Un wey en un reel me dijo||https://open.spotify.com/track/1fVVT89PhHDh9COdU5DB9B
+Vanessa Zamora|Hbls Mucho|Un wey en un reel me dijo||https://open.spotify.com/track/5bR2TZ4Umy1W5ItjCT0GYf
+Vanessa Zamora|Solegrande|Un wey en un reel me dijo||https://open.spotify.com/track/1ucbZ6xHcfJEpZXecucLfx
+Chusi|Ni Una Sola Palabra (feat. IMA)|Un wey en un reel me dijo||https://open.spotify.com/track/4h9tHQkrlXA3N1wvpqDXmR
+Diana Meril|Bby te necesito|Un wey en un reel me dijo||https://open.spotify.com/track/28mTC23nbAqdhdphOzCmIa
+Diana Meril|Quimera|Un wey en un reel me dijo||https://open.spotify.com/track/3YGRQyZWnYpTUPOMCrRPwr
+Ivana|Encima de mi|Un wey en un reel me dijo||https://open.spotify.com/track/0E5u4EcnDbx9OsygaR7lSJ
+Ivana|Si Nos Volvemos A Encontrar|Un wey en un reel me dijo||https://open.spotify.com/track/1BEPwgt9j3KXEhKDGfNCfM
+Ivana|Mocca|Un wey en un reel me dijo||https://open.spotify.com/track/3B3SncvTF7HG731m20DBeR
+SALES|Renee|Un wey en un reel me dijo||https://open.spotify.com/track/5MeUMSRreLHYLhw8ZTyqpk
+SALES|Pope Is a Rockstar|Un wey en un reel me dijo||https://open.spotify.com/track/0So2sgVa8aJiARPl2P29u2
+SALES|Big Sis|Un wey en un reel me dijo||https://open.spotify.com/track/0ARp9mXXpPflIwehy25kCa
+RENEE|Nunca Tristes (Me Vale Madre)|Un wey en un reel me dijo||https://open.spotify.com/track/6VfjKPhMwcPJYTBgB3k7xo
+La La Love You|Quiero Quedarme para Siempre|Un wey en un reel me dijo||https://open.spotify.com/track/78LESagKrWYm0P9E4cyRSj
+Playa Limbo|Sin Plan B|Un wey en un reel me dijo||https://open.spotify.com/track/0l2UZXjizWAHzdI8w64RV0
+Little Jesus|Fuera de Lugar|Un wey en un reel me dijo||https://open.spotify.com/track/2BWTYAiWbBGCJeKbQ6rpFA
+Girl Ultra|DameLove (feat. Cuco)|Un wey en un reel me dijo||https://open.spotify.com/track/2ALEhWrcpAdOC7YYJBQIre
+Girl Ultra|Punk|Un wey en un reel me dijo||https://open.spotify.com/track/4AHH9NSQXomtAgucYN9MSG
+Paloma Morphy|(sola)|Un wey en un reel me dijo||https://open.spotify.com/track/3SdwgzRoY5ZnDt3tsiva5F
+Paloma Morphy|lo que un día fue|Un wey en un reel me dijo||https://open.spotify.com/track/6VR9F92QImOnzX9gXQHlc1
+Paloma Morphy|pijama.|Un wey en un reel me dijo||https://open.spotify.com/track/3oCKpnwoT4g9adu3O1yyZ3
+The Marías|Basta Ya|Un wey en un reel me dijo||https://open.spotify.com/track/4CUTUsBGjHslu2Bd3AOXGg
+The Marías|Little by Little|Un wey en un reel me dijo||https://open.spotify.com/track/3EzlgdxyFvjeAGzR5WxHB8
+The Marías|Ay No Puedo|Un wey en un reel me dijo||https://open.spotify.com/track/3L0JDlycMhSA7R0M0OfNIY
+The Marías|Ruthless|Un wey en un reel me dijo||https://open.spotify.com/track/1mbuSss0OVqfS00y7yCNCZ
+The Marías|Only in My Dreams|Un wey en un reel me dijo||https://open.spotify.com/track/190IqlryWu91WBKeDgZqZz
+The Marías|Déjate Llevar|Un wey en un reel me dijo||https://open.spotify.com/track/4eevohYu5jHXgnCitivUVT
+The Marías|Lejos de Ti|Un wey en un reel me dijo||https://open.spotify.com/track/0phzfJn8NeT1LkbqfV2peI
+The Marías|I Like It|Un wey en un reel me dijo||https://open.spotify.com/track/3Vm6yiTPfhFeUHD4gt42cZ
+The Marías|Hold It Together|Un wey en un reel me dijo||https://open.spotify.com/track/6gJ2H930mAD1zRqmoFiE4W
+The Marías|To Say Hello|Un wey en un reel me dijo||https://open.spotify.com/track/76vbQVnCEHe02OP4EWvApz
+The Marías|Calling U Back|Un wey en un reel me dijo||https://open.spotify.com/track/5WVWQQpBJqljbZtxo19CxS
+Men I Trust|I Hope to Be Around|Un wey en un reel me dijo||https://open.spotify.com/track/3xnM0WCRJKk4Iz49rkG5OC
+The Marías|Love You Anyway|Un wey en un reel me dijo||https://open.spotify.com/track/3vxvz0JoRDvnx2jG9oPljA
+The Marías|Superclean|Un wey en un reel me dijo||https://open.spotify.com/track/0hxl37ZV9GgcY1Pn8UiPWK
+Clairo|4EVER|Un wey en un reel me dijo||https://open.spotify.com/track/6Kzul7v3QxHGwV2AjLNp3X
+The Marías|Fog as a Bullet|Un wey en un reel me dijo||https://open.spotify.com/track/4raL05JS5aNmXwClc2ATA8
+Crumb|Ghostride|Un wey en un reel me dijo||https://open.spotify.com/track/0R3TWpoxAhT3HDXM7tpRzS
+Men I Trust|Numb|Un wey en un reel me dijo||https://open.spotify.com/track/6Ijmj8Z0L31hCp5pLZnT5U
+Triathalon|Drip|Un wey en un reel me dijo||https://open.spotify.com/track/5H8BPBnmDDeocTGbwCmYWm
+Kali Uchis|quiero sentirme bien|Un wey en un reel me dijo||https://open.spotify.com/track/1xP2jdihnPfoqPNVHHhKnm
+Men I Trust|Tree Among Shrubs|Un wey en un reel me dijo||https://open.spotify.com/track/2JKtCvtxP47fOMYi0BjMoY
+The Marías|Hush|Un wey en un reel me dijo||https://open.spotify.com/track/4zXZ5Mq2L6jnsOsTssgRh8
+Clairo|Amoeba|Un wey en un reel me dijo||https://open.spotify.com/track/0HAqq2GcQKyi3s87GuN7jU
+The Marías|Sienna|Un wey en un reel me dijo||https://open.spotify.com/track/0InIeZW4P6VO7dUGRM4AKH
+Clairo|Pretty Girl|Un wey en un reel me dijo||https://open.spotify.com/track/27g0ztD0kKcDJRrIFDl8q8
+Men I Trust|Sugar|Un wey en un reel me dijo||https://open.spotify.com/track/6ZdAsADC9LIICvsVRuGWbZ
+The Marías|ABQ|Un wey en un reel me dijo||https://open.spotify.com/track/5P9PQR7CM5YPEU2I3EypWM
+The Marías|Run Your Mouth|Un wey en un reel me dijo||https://open.spotify.com/track/19fKJrO9XdOf6Xla2QHecO
+The Marías|Vicious Sensitive Robot|Un wey en un reel me dijo||https://open.spotify.com/track/1N2NENvgrnemh4AuV2hawv
+Clairo|Softly|Un wey en un reel me dijo||https://open.spotify.com/track/3r8b29rWOWwvxVyq3bSr1I
+Men I Trust|You Deserve This|Un wey en un reel me dijo||https://open.spotify.com/track/294NusLyTV6cRxJVjCqxML
+The Marías|All I Really Want Is You|Un wey en un reel me dijo||https://open.spotify.com/track/410rGaFDJPwjsr9m9RPCkz
+The Marías|Real Life|Un wey en un reel me dijo||https://open.spotify.com/track/3HVRZxCp3BWYuYe8L8BMNH
+The Marías|Care For You|Un wey en un reel me dijo||https://open.spotify.com/track/2CBtdZVcpSwaxOcLUi1AGo
+The Marías|Spin Me Around|Un wey en un reel me dijo||https://open.spotify.com/track/3WOZcIibmurJult4Z7Wfce
+The Marías|Loverboy|Un wey en un reel me dijo||https://open.spotify.com/track/3XCpEFU4uXsBq5WmVQQKC9
+The Marías|Hamptons|Un wey en un reel me dijo||https://open.spotify.com/track/1jlBePA3tcycCoANSSZbgj
+Clairo|2 Hold U|Un wey en un reel me dijo||https://open.spotify.com/track/0dcsuO7AQ06VS9uWfA6m1C
+Men I Trust|All Night|Un wey en un reel me dijo||https://open.spotify.com/track/0XvoMOI25j4wODyk8nuANS
+Kali Uchis|I Wish you Roses|Un wey en un reel me dijo||https://open.spotify.com/track/35SbrfbaSpGUBX7e5BPega
+Clairo|Juna|Un wey en un reel me dijo||https://open.spotify.com/track/2mWfVxEo4xZYDaz0v7hYrN
+Crumb|Ice Melt|Un wey en un reel me dijo||https://open.spotify.com/track/1OPkXWnIK8RYyWTp3NWvM9
+The Marías|Just a Feeling|Un wey en un reel me dijo||https://open.spotify.com/track/0ZjTXCk5QKDR0wGGPgqSS3
+The Marías|Heavy|Un wey en un reel me dijo||https://open.spotify.com/track/1ShRHPAiiIrh0arZbSFmx1
+Clairo|Heaven|Un wey en un reel me dijo||https://open.spotify.com/track/4XYo3W8U6IY42EbB01rnR4
+Shelly|Natural|Un wey en un reel me dijo||https://open.spotify.com/track/6VLjdregMReJhKp2r32IWo
+Clairo|Slow Dance|Un wey en un reel me dijo||https://open.spotify.com/track/2qmmnbJ9JR3f7vofbyje5r
+The Marías|Back To Me|Un wey en un reel me dijo||https://open.spotify.com/track/4E0P1xs3JNmsNr5c5nFTZJ
+Clairo|Sexy to Someone|Un wey en un reel me dijo||https://open.spotify.com/track/3awweDjWIuXNMogMClJnvE
+Clairo|Terrapin|Un wey en un reel me dijo||https://open.spotify.com/track/32fwe7MW5koort1Ua3YFx6
+Clairo|Second Nature|Un wey en un reel me dijo||https://open.spotify.com/track/7cFwopK7QTOgaEwF9JgipA
+The Marías|Ride|Un wey en un reel me dijo||https://open.spotify.com/track/3zJakbnIw0ufiVnIFkLfA1
+The Marías|Clueless|Un wey en un reel me dijo||https://open.spotify.com/track/4pnXcQSeFwrr3GPHEmeS7m
+The Marías|Nobody New|Un wey en un reel me dijo||https://open.spotify.com/track/3BUc2A0MJ53FHwiy3eohBt
+Clairo|Echo|Un wey en un reel me dijo||https://open.spotify.com/track/6QlSPjiXHc1XwGKeEls6Gh
+Kali Uchis|Never Be Yours|Un wey en un reel me dijo||https://open.spotify.com/track/3cKnHNL40tqnmjXiv4FOlk
+The Marías|Paranoia|Un wey en un reel me dijo||https://open.spotify.com/track/4gtIYSYu8u2ItBqrhCaChL
+The Marías|No One Noticed (Extended Spanish)|Un wey en un reel me dijo||https://open.spotify.com/track/2kn0fLwt9QRorHuGdmk6ze
+Tyler|St. Chroma (feat. Daniel Caesar)|W||https://open.spotify.com/track/1QoyuMHNBe7lg3YW4Qtll4
+Travis Scott|FE!N (feat. Playboi Carti)|W||https://open.spotify.com/track/42VsgItocQwOQC3XWZ8JNA
+Doechii|Persuasive (with SZA)|W||https://open.spotify.com/track/67v2UHujFruxWrDmjPYxD6
+Doechii|NISSAN ALTIMA|W||https://open.spotify.com/track/2dKkVF2m160z0RNDN2dddc
+Doechii|WAIT|W||https://open.spotify.com/track/3bnEbEdttscDToE3I8yOZD
+Peso Pluma|ICE|W||https://open.spotify.com/track/5c9vvmRxose2Qk8JOxpxrE
+Peso Pluma|PUT EM IN THE FRIDGE|W||https://open.spotify.com/track/2BACqEbfDpPMOO7xhSOz2B
+Kendrick Lamar|untitled 08 | 09.06.2014.|W||https://open.spotify.com/track/5bBUDJUfGcG7eFy3Bf4fXv
+Kendrick Lamar|peekaboo (feat. azchike)|W||https://open.spotify.com/track/2Uts1QFB4u2YNIMiqcb4de
+Kendrick Lamar|tv off (feat. lefty gunplay)|W||https://open.spotify.com/track/0aB0v4027ukVziUGwVGYpG
+Kendrick Lamar|luther (with sza)|W||https://open.spotify.com/track/45J4avUb9Ni0bnETYaYFVJ
+Kendrick Lamar|squabble up|W||https://open.spotify.com/track/0nj9Bq5sHDiTxSHunhgkFb
+Tyler|Balloon (feat. Doechii)|W||https://open.spotify.com/track/35D1RA5uVFVhMc1qX80TaQ
+Tyler|See You Again (feat. Kali Uchis)|W||https://open.spotify.com/track/7KA4W4McWYRpgf0fWsJZWB
+MF DOOM|One Beer|W||https://open.spotify.com/track/4BnrGx9tWNF8aiXl1UhDBa
+Kendrick Lamar|Count Me Out|W||https://open.spotify.com/track/6BU1RZexmvJcBjgagVVt3M
+Kendrick Lamar|A.D.H.D|W||https://open.spotify.com/track/2Fw5S2gaOSZzdN5dFoC2dj
+Kendrick Lamar|HiiiPower|W||https://open.spotify.com/track/4WEuEfFiczWxblHyuucSBL
+Kendrick Lamar|Money Trees|W||https://open.spotify.com/track/74tLlkN3rgVzRqQJgPfink
+Kendrick Lamar|Bitch, Don’t Kill My Vibe|W||https://open.spotify.com/track/0yhMmqax6HRAZxI7udEask
+Doechii|DENIAL IS A RIVER|W||https://open.spotify.com/track/1eTaznNW4Xxtx9za2SMTXB
+Mac Miller|5 Dollar Pony Rides|W||https://open.spotify.com/track/1xKGnsdKOh8jx8pzSZAgXE
+jev.|where's the confetti?|W||https://open.spotify.com/track/3VL3aSOA8O3b5iOVBkD9iD
+Doechii|Nosebleeds|W||https://open.spotify.com/track/3QfxeNMKiOMFxHVLlR1L1c
+Joey Valence & Brae|OK|W||https://open.spotify.com/track/442lxJfyUbsOWAYFBxNDdL
+Charles Ans|Ariande / “14 Besos”|W||https://open.spotify.com/track/3S6VyqU2RJJHipTDlN9Hz7
+IDK|CLOVER|W||https://open.spotify.com/track/0ceAnr7yV1CO6Hseca0vrB
+Doechii|CATFISH|W||https://open.spotify.com/track/3QQvSQKV8YmQxGolwwWe59
+Kanye West|Father Stretch My Hands Pt. 1|W||https://open.spotify.com/track/4KW1lqgSr8TKrvBII0Brf8
+Vetusta Morla|Puentes|Deséame Suerte||https://open.spotify.com/track/3UEKxKRPkUzOGVTYlDf15a
+Vetusta Morla|¡Ay, Madrid!|Deséame Suerte||https://open.spotify.com/track/0KCZWpCxzfTS0WxCpm5n8t
+Vetusta Morla|La Sábana de mis Fantasmas|Deséame Suerte||https://open.spotify.com/track/7LnKyhaEvarRIob13OBTFt
+Vetusta Morla|Figurantes|Deséame Suerte||https://open.spotify.com/track/0uwUDLoosqJ7KRem4qRPxv
+Vetusta Morla|Catedrales|Deséame Suerte||https://open.spotify.com/track/0jEv5wC52rZxFiEuBJBk3p
+Vetusta Morla|Parece Mentira|Deséame Suerte||https://open.spotify.com/track/5n9TdgPEINHuJKoT5RSAZA
+Vetusta Morla|1, 2, 3, Big Bang|Deséame Suerte||https://open.spotify.com/track/3Tn3ZpVl91kgpN1LaOAM3v
+Vetusta Morla|Cosas que Hacer un Domingo por la Tarde|Deséame Suerte||https://open.spotify.com/track/5MIp6wcdkcfUrlEPNMQaO4
+Vetusta Morla|La Derrota|Deséame Suerte||https://open.spotify.com/track/6ERvzvNhOAWZffyBROuvqN
+Vetusta Morla|Nadadoras|Deséame Suerte||https://open.spotify.com/track/251CRflRNa2DfnWQHkV253
+Vetusta Morla|Drones|Deséame Suerte||https://open.spotify.com/track/2aJ1gmrrKbWiaiDptaar3V
+Vetusta Morla|Puñalada Trapera|Deséame Suerte||https://open.spotify.com/track/2DwTME1HMySsnglHE1T0zZ
+Vetusta Morla|La Virgen de La Humanidad|Deséame Suerte||https://open.spotify.com/track/1EJfdvLYKAsbX9XslyENMH
+Vetusta Morla|No Seré Yo|Deséame Suerte||https://open.spotify.com/track/2gJsNulUxAafujhKtE8C47
+Vetusta Morla|El Imperio del Sol|Deséame Suerte||https://open.spotify.com/track/7d3n7tvtt4Mx3XTqVje0OA
+Vetusta Morla|Corazón de Lava|Deséame Suerte||https://open.spotify.com/track/6UowyibhCgLMU42K6DOEIM
+Vetusta Morla|La Diana|Deséame Suerte||https://open.spotify.com/track/5yl9RdqMPZYEttv9l9BJ1v
+Vetusta Morla|Palabra Es lo Único que Tengo|Deséame Suerte||https://open.spotify.com/track/6gnJhKs6hDBPF7G5K2KxJi
+Vetusta Morla|Si Te Quiebras|Deséame Suerte||https://open.spotify.com/track/2XWeso9mJ9aqH6OVddJ3qO
+Vetusta Morla|Finisterre|Deséame Suerte||https://open.spotify.com/track/5FhTo7yj2umChnDdqch8oG
+Vetusta Morla|Al Final de la Escapada|Deséame Suerte||https://open.spotify.com/track/5OJ8Ao3PQCMHOcLnt3DbOb
+Vetusta Morla|Deséame Suerte|Deséame Suerte||https://open.spotify.com/track/6r6RKNFH4Z6qwE5wcR0ThO
+Vetusta Morla|El Discurso del Rey|Deséame Suerte||https://open.spotify.com/track/5c9vzNTSsOVtqNdoLxnThW
+Vetusta Morla|Palmeras en La Mancha|Deséame Suerte||https://open.spotify.com/track/5YZMJ4EP6dQ09exI0qkN1h
+Vetusta Morla|Consejo de Sabios|Deséame Suerte||https://open.spotify.com/track/7C5pur4EKhyZxUaUa9qxjQ
+Vetusta Morla|Guerra Civil|Deséame Suerte||https://open.spotify.com/track/2xGWmq36THIoLaMXm5SVAw
+Vetusta Morla|Te lo Digo a Ti|Deséame Suerte||https://open.spotify.com/track/55ZjGMNSwRti3ZaIiI0OiN
+Vetusta Morla|Punto Sin Retorno|Deséame Suerte||https://open.spotify.com/track/1Iovb0I9Jk81npSal4d7g9
+Vetusta Morla|La Vieja Escuela|Deséame Suerte||https://open.spotify.com/track/1NfW15QeAYNu6uJcLzcffu
+Vetusta Morla|Mismo Sitio, Distinto Lugar|Deséame Suerte||https://open.spotify.com/track/1Z0p8lse8FkvVpQvCtI7fY
+Vetusta Morla|La Deriva|Deséame Suerte||https://open.spotify.com/track/3yAVc9zsc742nCxO8mDB8T
+Vetusta Morla|Golpe Maestro|Deséame Suerte||https://open.spotify.com/track/2adhtQyoXfZiJdaaK5Z52Z
+Vetusta Morla|La Mosca en Tu Pared|Deséame Suerte||https://open.spotify.com/track/2GFwizKmCoyTNa8lj6IkRx
+Vetusta Morla|Fuego|Deséame Suerte||https://open.spotify.com/track/3vg71FeXUDcUL3k1qZeGZz
+Vetusta Morla|Fiesta Mayor|Deséame Suerte||https://open.spotify.com/track/2JUPDC22B0ypyQH8K2JyPv
+Vetusta Morla|¡Alto!|Deséame Suerte||https://open.spotify.com/track/5Y0b2WxbaL9LOBm6DiIAlq
+Vetusta Morla|La Grieta|Deséame Suerte||https://open.spotify.com/track/7yMhGgFhx0mZ0Yw7f3CvKH
+Vetusta Morla|Pirómanos|Deséame Suerte||https://open.spotify.com/track/0KlU1jndbVLbmZJm513UTO
+Vetusta Morla|Las Salas de Espera|Deséame Suerte||https://open.spotify.com/track/50WapuvM4eg91hwV4J2Ums
+Vetusta Morla|Cuarteles de Invierno|Deséame Suerte||https://open.spotify.com/track/7hlR10JKqZ1BKm8PliNTak
+Vetusta Morla|Tour de Francia|Deséame Suerte||https://open.spotify.com/track/3b5yGTpipwOCD36jvxUc3M
+Vetusta Morla|Una Sonata Fantasma|Deséame Suerte||https://open.spotify.com/track/5wJTFtKIwrjxSU65tstB94
+Vetusta Morla|Los Buenos|Deséame Suerte||https://open.spotify.com/track/3FzuQ398ughVa456X6PCV6
+Vetusta Morla|Los Días Raros|Deséame Suerte||https://open.spotify.com/track/0eVB5kmXBHSKgTYxgI77kq
+Vetusta Morla|Lo Que Te Hace Grande|Deséame Suerte||https://open.spotify.com/track/1OYhYHLLXPWvUjGvSJnxMw
+Vetusta Morla|En el Río|Deséame Suerte||https://open.spotify.com/track/6RBkJfOoKhGTMyUP6YXcjS
+Vetusta Morla|Baldosas Amarillas|Deséame Suerte||https://open.spotify.com/track/2BHoRzT1CAbvDBoa3oXcjv
+Vetusta Morla|Boca en la Tierra|Deséame Suerte||https://open.spotify.com/track/6Da8w1k1IRMSYiGJsug70i
+Vetusta Morla|El Hombre del Saco|Deséame Suerte||https://open.spotify.com/track/2I2SSlcGB8Md9cnmPSe3cl
+Vetusta Morla|Maldita Dulzura|Deséame Suerte||https://open.spotify.com/track/1RnDdNwGdqTMSTiZmSLYdU
+Vetusta Morla|Cenas Ajenas|Deséame Suerte||https://open.spotify.com/track/6HhH7t3t43fb5L0OMH2Oz4
+Vetusta Morla|Mapas|Deséame Suerte||https://open.spotify.com/track/5YqdZam9Ad85HrtrhzpCSk
+Vetusta Morla|Canción de Vuelta|Deséame Suerte||https://open.spotify.com/track/347xGYry34MgnQKTjKg4J3
+Vetusta Morla|Escudo Humano|Deséame Suerte||https://open.spotify.com/track/1ZaQfoHeFmItKM2ZF4MERf
+Vetusta Morla|Mi Suerte|Deséame Suerte||https://open.spotify.com/track/6JS7TtyEuYYAqieHISx69E
+Vetusta Morla|Autocrítica|Deséame Suerte||https://open.spotify.com/track/73P7m3XZ4ha7qFOBpuIozd
+Vetusta Morla|Sálvese Quien Pueda|Deséame Suerte||https://open.spotify.com/track/5VQarczMNfW5OyLGuZhA6H
+Vetusta Morla|Un Día en el Mundo|Deséame Suerte||https://open.spotify.com/track/5RASH1Os22jKnrGFLu5JTO
+Vetusta Morla|Copenhague|Deséame Suerte||https://open.spotify.com/track/4bZEZhCq2kqUxnMacXVl5x
+Vetusta Morla|Valiente|Deséame Suerte||https://open.spotify.com/track/0pyT9W877RcYtVdl1ZmlvQ
+Vetusta Morla|La Marea|Deséame Suerte||https://open.spotify.com/track/3ubsmZHxibRIz1q9rWf3ff
+Vetusta Morla|Pequeño Desastre Animal|Deséame Suerte||https://open.spotify.com/track/6TMBxwtmMjKPCbQOslu6li
+Vetusta Morla|La Cuadratura del Círculo|Deséame Suerte||https://open.spotify.com/track/7vr0Zpqkp72I6pKGhvQDs8
+Vetusta Morla|Año Nuevo|Deséame Suerte||https://open.spotify.com/track/06nLLMVAFVaYKJmFAAy3ko
+Vetusta Morla|Rey Sol|Deséame Suerte||https://open.spotify.com/track/2g5oBi9JFLtYZ6N4JEW8FR
+Vetusta Morla|Saharabbey Road|Deséame Suerte||https://open.spotify.com/track/3kKC32g6Udc9wNHwZcMohb
+Vetusta Morla|Al Respirar|Deséame Suerte||https://open.spotify.com/track/2UFq3PFPpILeaD54n8i2Jw
+Vetusta Morla|Puntos Suspensivos|Deséame Suerte||https://open.spotify.com/track/3I8OL8lQoPA1TLIrJQi41j
+Vetusta Morla|Profetas de la Mañana|Deséame Suerte||https://open.spotify.com/track/2bNUGcb5oX25qVl5ZXzVvG
+Twenty One Pilots|RAWFEAR|HS||https://open.spotify.com/track/43ee3gqWBlPKe2MeGJ2S6I
+Twenty One Pilots|Drum Show|HS||https://open.spotify.com/track/20BFo9REyGdCxrlPmD3xph
+Twenty One Pilots|The Contract|HS||https://open.spotify.com/track/22BA9h34P0Q2PGZudsEBco
+Twenty One Pilots|Downstairs|HS||https://open.spotify.com/track/11QNo3ld81pncy71q6VIic
+Twenty One Pilots|Tally|HS||https://open.spotify.com/track/0DGf6s54MQ3Oht41mj6s6K
+Twenty One Pilots|Next Semester|HS||https://open.spotify.com/track/1BANPzYIhCQkJ1ZFq2Fb0O
+Twenty One Pilots|Midwest Indigo|HS||https://open.spotify.com/track/7GVQS66ukm48XZVymA3ZUg
+Twenty One Pilots|Routines In The Night|HS||https://open.spotify.com/track/4bDIAWaOBGAAk95nyXI6zJ
+Twenty One Pilots|Vignette|HS||https://open.spotify.com/track/3sEufjE0ITaW5qhtnW3avv
+Phum Viphurit|Loving And Letting Go|HS||https://open.spotify.com/track/3Zv4HZiyM8TeAbYGdWysXw
+ASIAN KUNG-FU GENERATION|Loser|HS||https://open.spotify.com/track/3TCKmUoY27pGRVtf8KQQy8
+Gorillaz|Kids with Guns|HS||https://open.spotify.com/track/0eEgMbSzOHmkOeVuNC3E0k
+Gorillaz|Sleeping Powder|HS||https://open.spotify.com/track/5pE9vMyvVNOpZFutt6lyy4
+Twenty One Pilots|Drag Path|HS||https://open.spotify.com/track/0TlcczkVTGpinpkGJpT81L
+ASIAN KUNG-FU GENERATION|フラッシュバック|No Love Song||https://open.spotify.com/track/0I2LS4n94uatBVngiwuslk
+ASIAN KUNG-FU GENERATION|未来の破片|No Love Song||https://open.spotify.com/track/6w6bBuMFTcqr6vWYs307ye
+ASIAN KUNG-FU GENERATION|電波塔|No Love Song||https://open.spotify.com/track/2ECWvYxNdlwFaaqdtrBspN
+ASIAN KUNG-FU GENERATION|アンダースタンド|No Love Song||https://open.spotify.com/track/21HL50mcOqavJNN7krtTD6
+ASIAN KUNG-FU GENERATION|夏の日、残像|No Love Song||https://open.spotify.com/track/2QbvvkUZTbulYf1eHF6vQ6
+ASIAN KUNG-FU GENERATION|無限グライダー|No Love Song||https://open.spotify.com/track/72x9qYIypIbyOlsvusj1VC
+ASIAN KUNG-FU GENERATION|その訳を|No Love Song||https://open.spotify.com/track/0xCc1BmufDYAQImktsGq7i
+ASIAN KUNG-FU GENERATION|N.G.S|No Love Song||https://open.spotify.com/track/52Q8OBalnToIEzwHLP6Ls6
+ASIAN KUNG-FU GENERATION|自閉探索|No Love Song||https://open.spotify.com/track/4HT2TvICP3ExMV0E0th5by
+ASIAN KUNG-FU GENERATION|E|No Love Song||https://open.spotify.com/track/1DkybjuRycHNQKbDpCTcnO
+ASIAN KUNG-FU GENERATION|君という花|No Love Song||https://open.spotify.com/track/1YnMDPixSp4cWjnO3Q2D2S
+ASIAN KUNG-FU GENERATION|ノーネーム|No Love Song||https://open.spotify.com/track/2Bj0gGjErVEPH6njfG2GmU
+ASIAN KUNG-FU GENERATION|振動覚|No Love Song||https://open.spotify.com/track/3iUHFt2vXwOdF7Qm0I0XtH
+ASIAN KUNG-FU GENERATION|リライト|No Love Song||https://open.spotify.com/track/3txqYlzoDZGLoW8MGll9tQ
+ASIAN KUNG-FU GENERATION|君の街まで|No Love Song||https://open.spotify.com/track/4eeEG54H5Ay1jVmQ212vZH
+ASIAN KUNG-FU GENERATION|マイワールド|No Love Song||https://open.spotify.com/track/4Qw1myre3TAiCSbmiiEYOp
+ASIAN KUNG-FU GENERATION|夜の向こう|No Love Song||https://open.spotify.com/track/2UwZ522HWeW4XAneODqHKu
+ASIAN KUNG-FU GENERATION|ラストシーン|No Love Song||https://open.spotify.com/track/6a8ykogaRv5KD7yIXqoLDg
+ASIAN KUNG-FU GENERATION|サイレン|No Love Song||https://open.spotify.com/track/4yg2ONKuiZhHmaB547t6v1
+ASIAN KUNG-FU GENERATION|Re:Re:|No Love Song||https://open.spotify.com/track/0WaaPFt4Qy8sVfxKz43bCD
+ASIAN KUNG-FU GENERATION|24時|No Love Song||https://open.spotify.com/track/4EZnEUoKYVG5wfx5pF8Gb7
+ASIAN KUNG-FU GENERATION|真夜中と真昼の夢|No Love Song||https://open.spotify.com/track/0U9qgW7Iw263gcvAAL6R2r
+ASIAN KUNG-FU GENERATION|海岸通り|No Love Song||https://open.spotify.com/track/2psjUf9K0NLjxEldo4Vl7A
+ASIAN KUNG-FU GENERATION|ループ＆ループ|No Love Song||https://open.spotify.com/track/5F9GVZg64a1eY2Ne5bSjTe
+ASIAN KUNG-FU GENERATION|エントランス|No Love Song||https://open.spotify.com/track/41F9i20xSA91Wh2tBwphA5
+ASIAN KUNG-FU GENERATION|ロケットNo.4|No Love Song||https://open.spotify.com/track/135asnLYqPZXc3DGp8Qo9U
+ASIAN KUNG-FU GENERATION|絵画教室|No Love Song||https://open.spotify.com/track/6vBHuaPOUKNp1H5EvcgKdN
+ASIAN KUNG-FU GENERATION|サイレン#|No Love Song||https://open.spotify.com/track/2sztGAj4De5EDDCZYbVbuy
+ASIAN KUNG-FU GENERATION|夕暮れの紅|No Love Song||https://open.spotify.com/track/5etdnAOiwuKzpqNxunBbDh
+ASIAN KUNG-FU GENERATION|Hold me tight|No Love Song||https://open.spotify.com/track/7bKLwmBgdsgpjgSZRTQDUb
+ASIAN KUNG-FU GENERATION|ロードムービー|No Love Song||https://open.spotify.com/track/21c3vu621w0GiAd7QlWzPc
+ASIAN KUNG-FU GENERATION|飛べない魚|No Love Song||https://open.spotify.com/track/1qJXYbhePhWLuMeTrlNVMx
+ASIAN KUNG-FU GENERATION|堂々巡りの夜|No Love Song||https://open.spotify.com/track/60Wplzy8FKvNCm3JxtXHw0
+ASIAN KUNG-FU GENERATION|嘘とワンダーランド|No Love Song||https://open.spotify.com/track/6BnELncvOlJ8WRwb2fOPXe
+ASIAN KUNG-FU GENERATION|永遠に|No Love Song||https://open.spotify.com/track/0QgzMcGVeurduAJhhgEsL1
+ASIAN KUNG-FU GENERATION|自閉探索（2004 SHIBUYA-AX) (Live)|No Love Song||https://open.spotify.com/track/5XoHhsZZnYLoWmaSTZlvgE
+ASIAN KUNG-FU GENERATION|フラッシュバック（2004 国営ひたち海浜公園) (Live)|No Love Song||https://open.spotify.com/track/005hF4Wvc2vxMzY4yP5ttN
+ASIAN KUNG-FU GENERATION|アンダースタンド（2004 国営ひたち海浜公園) (Live)|No Love Song||https://open.spotify.com/track/2YmDFeaN90UYApqffBvxEj
+ASIAN KUNG-FU GENERATION|N.G.S　(2005 SHIBUYA-AX）|No Love Song||https://open.spotify.com/track/7CeacAJaVt3vNwIudVL78z
+ASIAN KUNG-FU GENERATION|Re:Re:　(2006 横浜アリーナ)|No Love Song||https://open.spotify.com/track/1dm6htqEq0WloaU5TCFBhj
+ASIAN KUNG-FU GENERATION|暗号のワルツ|No Love Song||https://open.spotify.com/track/6EMfKWvSY1crIxWj0RdyjT
+ASIAN KUNG-FU GENERATION|ワールドアパート|No Love Song||https://open.spotify.com/track/61ssVRFKyHLe1vDetrh6VL
+ASIAN KUNG-FU GENERATION|ブラックアウト|No Love Song||https://open.spotify.com/track/7Jmd709lD4k3Sju5Y7baUM
+ASIAN KUNG-FU GENERATION|桜草|No Love Song||https://open.spotify.com/track/4OqhCz4CYpNzFhsviTDkQA
+ASIAN KUNG-FU GENERATION|路地裏のうさぎ|No Love Song||https://open.spotify.com/track/6uFoVVMtJt8XwzetfGzTcj
+ASIAN KUNG-FU GENERATION|ブルートレイン|No Love Song||https://open.spotify.com/track/5ZrpIXZwxOjVJa3EBGx1cw
+ASIAN KUNG-FU GENERATION|真冬のダンス|No Love Song||https://open.spotify.com/track/6ov8lCzIKyobrcBhmsyTsP
+ASIAN KUNG-FU GENERATION|バタフライ|No Love Song||https://open.spotify.com/track/7Lx995QnN8Zw2AlqxegLQ0
+ASIAN KUNG-FU GENERATION|センスレス|No Love Song||https://open.spotify.com/track/2jQLW6pCVXigNasgSTn1C2
+ASIAN KUNG-FU GENERATION|月光|No Love Song||https://open.spotify.com/track/3u01jnP51pr8OTewaeriB6
+ASIAN KUNG-FU GENERATION|タイトロープ|No Love Song||https://open.spotify.com/track/3L3NhXN0kV2yLVLE0CB2Qy
+ASIAN KUNG-FU GENERATION|ワールド ワールド ワールド|No Love Song||https://open.spotify.com/track/2AkQZsLDKIKjtONFO4E4Ql
+ASIAN KUNG-FU GENERATION|アフターダーク|No Love Song||https://open.spotify.com/track/6XsJTpZwPKMcG8QK8k14Z6
+ASIAN KUNG-FU GENERATION|旅立つ君へ|No Love Song||https://open.spotify.com/track/1ylUhoxTunVcr0verdu7AY
+ASIAN KUNG-FU GENERATION|ネオテニー|No Love Song||https://open.spotify.com/track/6Z1T0pLRwg2y00UnXRORGk
+ASIAN KUNG-FU GENERATION|トラベログ|No Love Song||https://open.spotify.com/track/5D2hIZzHOh0i5kfMN9DFkZ
+ASIAN KUNG-FU GENERATION|No.9|No Love Song||https://open.spotify.com/track/3pUEM7v18yaiWTmA3fayrP
+ASIAN KUNG-FU GENERATION|ナイトダイビング|No Love Song||https://open.spotify.com/track/53dyDPkhsbnWz7SLhh8X7B
+ASIAN KUNG-FU GENERATION|ライカ|No Love Song||https://open.spotify.com/track/4SBjQMgpE53RCCGvzRdqP1
+ASIAN KUNG-FU GENERATION|惑星|No Love Song||https://open.spotify.com/track/71QDYNJUw3ziZbbAAHVpwH
+ASIAN KUNG-FU GENERATION|転がる岩、君に朝が降る|No Love Song||https://open.spotify.com/track/33cvF54sRDtyflQJJ4fjbb
+ASIAN KUNG-FU GENERATION|ワールド ワールド|No Love Song||https://open.spotify.com/track/2dVs7bzmga5hvBTq4pPlNK
+ASIAN KUNG-FU GENERATION|或る街の群青|No Love Song||https://open.spotify.com/track/2sMf2FGk89v6BTJgKXGW1V
+ASIAN KUNG-FU GENERATION|新しい世界|No Love Song||https://open.spotify.com/track/2JBCI88lOIhMilK5lhK4zc
+ASIAN KUNG-FU GENERATION|藤沢ルーザー|No Love Song||https://open.spotify.com/track/1EHsyVTxdGKZJiUYnR5yET
+ASIAN KUNG-FU GENERATION|鵠沼サーフ|No Love Song||https://open.spotify.com/track/5q3Quevic6d1a7AFPGfq8J
+ASIAN KUNG-FU GENERATION|江ノ島エスカー|No Love Song||https://open.spotify.com/track/4nXd5mb14Ek2xLnOV9mRtn
+ASIAN KUNG-FU GENERATION|腰越クライベイビー|No Love Song||https://open.spotify.com/track/13tvchV3WElZxWCg5HLv9D
+ASIAN KUNG-FU GENERATION|七里ヶ浜スカイウォーク|No Love Song||https://open.spotify.com/track/2TtIo7b1IIyjY1TWoC6fRA
+ASIAN KUNG-FU GENERATION|稲村ヶ崎ジェーン|No Love Song||https://open.spotify.com/track/43GipwmizIZVGCQnNZUP8V
+ASIAN KUNG-FU GENERATION|極楽寺ハートブレイク|No Love Song||https://open.spotify.com/track/7l3euKoFO24vfHakyVyso2
+ASIAN KUNG-FU GENERATION|長谷サンズ|No Love Song||https://open.spotify.com/track/6ejhdVZBx1naKsS15OJL9B
+ASIAN KUNG-FU GENERATION|由比ヶ浜カイト|No Love Song||https://open.spotify.com/track/4jOcHjJYRLXykeoegDtbUF
+ASIAN KUNG-FU GENERATION|鎌倉グッドバイ|No Love Song||https://open.spotify.com/track/7q9xc1HlFwngc2oPfKgate
+ASIAN KUNG-FU GENERATION|マジックディスク|No Love Song||https://open.spotify.com/track/6ZYEx7IetMWyiBXbgDBoqx
+ASIAN KUNG-FU GENERATION|双子葉|No Love Song||https://open.spotify.com/track/16He7htgqBB1Tmgam17iMO
+ASIAN KUNG-FU GENERATION|さよならロストジェネレイション|No Love Song||https://open.spotify.com/track/7rbLplcc7cvh0gYyJ0pfcv
+ASIAN KUNG-FU GENERATION|迷子犬と雨のビート|No Love Song||https://open.spotify.com/track/6Yha68ZrTNJr5rCkonWihU
+ASIAN KUNG-FU GENERATION|青空と黒い猫|No Love Song||https://open.spotify.com/track/3bQofqqFGTdHyEq9VURoMg
+ASIAN KUNG-FU GENERATION|架空生物のブルース|No Love Song||https://open.spotify.com/track/0FelWZcgd4NcDNM0ETwZUq
+ASIAN KUNG-FU GENERATION|ラストダンスは悲しみを乗せて|No Love Song||https://open.spotify.com/track/31r1Ej4Tfvxbg090PsosH5
+ASIAN KUNG-FU GENERATION|マイクロフォン|No Love Song||https://open.spotify.com/track/6tIYEbLx8NFtNC1CGdcK9h
+ASIAN KUNG-FU GENERATION|ライジングサン|No Love Song||https://open.spotify.com/track/6bGjLifUamUf1C1AEZZFKi
+ASIAN KUNG-FU GENERATION|イエス|No Love Song||https://open.spotify.com/track/0XIvT0Am8xfb2ZaPOZF2WK
+ASIAN KUNG-FU GENERATION|橙|No Love Song||https://open.spotify.com/track/0ZXtht0ji89otVykE8l5Gv
+ASIAN KUNG-FU GENERATION|ソラニン|No Love Song||https://open.spotify.com/track/2H9YjQghPZ74vt0U4xHcKq
+ASIAN KUNG-FU GENERATION|遥か彼方|No Love Song||https://open.spotify.com/track/5ORPYXJKlpHWIdceavSGrL
+ASIAN KUNG-FU GENERATION|ムスタング|No Love Song||https://open.spotify.com/track/45vPWzOabPhF7PxR4XHQLb

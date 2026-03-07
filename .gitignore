@@ -1,0 +1,27 @@
+# SSH server keys - NEVER commit these
+.ssh
+.ssh/
+.ssh.pub
+*.pem
+*.key
+
+# Binary
+ssh.joledev
+ssh.joledev.exe
+
+# Environment
+.env
+
+# IDE / tools
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Image source (not needed in prod)
+NoLoveSong.jpg

@@ -1,0 +1,34 @@
+[Unit]
+Description=SSH Portfolio - ssh.joledev.com
+After=network.target
+
+[Service]
+Type=simple
+User=sshjoledev
+Group=sshjoledev
+WorkingDirectory=/opt/ssh-joledev
+ExecStart=/opt/ssh-joledev/ssh.joledev
+Restart=always
+RestartSec=5
+
+# Security hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/ssh-joledev/.ssh
+PrivateTmp=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictNamespaces=true
+
+# Environment
+Environment=SSH_HOST=0.0.0.0
+Environment=SSH_PORT=2223
+Environment=SSH_KEY_PATH=/opt/ssh-joledev/.ssh
+Environment=POSTS_DIR=/opt/ssh-joledev/posts
+Environment=SONGS_PATH=/opt/ssh-joledev/data/songs.txt
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,77 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+
+      - name: Build for Linux
+        run: GOOS=linux GOARCH=amd64 go build -o ssh.joledev .
+
+      - name: Deploy to VPS
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          source: "ssh.joledev,data/,posts/,deploy/"
+          target: "/tmp/ssh-joledev-deploy"
+          overwrite: true
+
+      - name: Restart service
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          script: |
+            set -e
+            DEPLOY_DIR="/tmp/ssh-joledev-deploy"
+            APP_DIR="/opt/ssh-joledev"
+
+            # Create app dir and user if first deploy
+            sudo useradd --system --no-create-home --shell /usr/sbin/nologin sshjoledev 2>/dev/null || true
+            sudo mkdir -p "$APP_DIR"/{.ssh,data,posts/es,posts/en}
+
+            # Copy binary and data
+            sudo cp "$DEPLOY_DIR/ssh.joledev" "$APP_DIR/ssh.joledev"
+            sudo cp -r "$DEPLOY_DIR/data/"* "$APP_DIR/data/" 2>/dev/null || true
+            sudo cp -r "$DEPLOY_DIR/posts/"* "$APP_DIR/posts/" 2>/dev/null || true
+            sudo cp "$DEPLOY_DIR/deploy/ssh-joledev.service" /etc/systemd/system/ssh-joledev.service
+
+            # Permissions
+            sudo chown -R sshjoledev:sshjoledev "$APP_DIR"
+            sudo chmod 700 "$APP_DIR/.ssh"
+            sudo chmod 755 "$APP_DIR/ssh.joledev"
+
+            # Restart service
+            sudo systemctl daemon-reload
+            sudo systemctl enable ssh-joledev
+            sudo systemctl restart ssh-joledev
+
+            # Setup iptables redirect (port 22 -> 2223) if not already set
+            if ! sudo iptables -t nat -C PREROUTING -p tcp --dport 22 -j REDIRECT --to-port 2223 2>/dev/null; then
+              sudo iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-port 2223
+              sudo sh -c 'iptables-save > /etc/iptables/rules.v4' 2>/dev/null || true
+            fi
+
+            # Cleanup
+            rm -rf "$DEPLOY_DIR"
+
+            # Verify
+            sleep 2
+            sudo systemctl status ssh-joledev --no-pager || true
+            echo "Deploy complete!"
