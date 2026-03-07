@@ -4,95 +4,81 @@ import "github.com/charmbracelet/lipgloss"
 
 var (
 	// Colors inspired by the Shinseiki No Love Song cover
-	Magenta    = lipgloss.Color("#FF00FF")
-	Cyan       = lipgloss.Color("#00D4FF")
-	Pink       = lipgloss.Color("#FF69B4")
-	White      = lipgloss.Color("#FFFFFF")
-	Gray       = lipgloss.Color("#888888")
-	DarkGray   = lipgloss.Color("#444444")
-	Yellow     = lipgloss.Color("#FFD700")
-	Blue       = lipgloss.Color("#4A90D9")
+	Magenta  = lipgloss.Color("#FF00FF")
+	Cyan     = lipgloss.Color("#00D4FF")
+	Pink     = lipgloss.Color("#FF69B4")
+	White    = lipgloss.Color("#FFFFFF")
+	Gray     = lipgloss.Color("#666666")
+	DarkGray = lipgloss.Color("#333333")
+	Blue     = lipgloss.Color("#4A90D9")
+	Dim      = lipgloss.Color("#555555")
 
-	// Tab styles
-	ActiveTab = lipgloss.NewStyle().
+	// Art style
+	ArtStyle = lipgloss.NewStyle().Foreground(Magenta)
+
+	// Text styles
+	TitleStyle = lipgloss.NewStyle().
 			Bold(true).
-			Foreground(White).
-			Background(Magenta).
-			Padding(0, 2)
+			Foreground(Cyan)
 
-	InactiveTab = lipgloss.NewStyle().
-			Foreground(Gray).
-			Padding(0, 2)
-
-	TabBar = lipgloss.NewStyle().
-		BorderBottom(true).
-		BorderStyle(lipgloss.NormalBorder()).
-		BorderForeground(DarkGray).
-		MarginBottom(1)
-
-	// Content styles
-	Title = lipgloss.NewStyle().
-		Bold(true).
-		Foreground(Magenta).
-		MarginBottom(1)
-
-	Subtitle = lipgloss.NewStyle().
-			Foreground(Pink).
-			Italic(true)
-
-	AsciiStyle = lipgloss.NewStyle().
+	NameStyle = lipgloss.NewStyle().
+			Bold(true).
 			Foreground(Magenta)
 
-	TextStyle = lipgloss.NewStyle().
-			Foreground(White)
+	SubtitleStyle = lipgloss.NewStyle().
+			Foreground(White).
+			Italic(true)
+
+	BodyStyle = lipgloss.NewStyle().
+			Foreground(lipgloss.Color("#AAAAAA"))
 
 	DimStyle = lipgloss.NewStyle().
-			Foreground(Gray)
+			Foreground(Dim)
+
+	LinkStyle = lipgloss.NewStyle().
+			Foreground(Blue)
 
 	AccentStyle = lipgloss.NewStyle().
 			Foreground(Cyan).
 			Bold(true)
 
-	LinkStyle = lipgloss.NewStyle().
-			Foreground(Blue).
-			Underline(true)
+	// Navigation
+	ActiveNavStyle = lipgloss.NewStyle().
+			Bold(true).
+			Foreground(Cyan)
 
-	// Tech stack badge
-	Badge = lipgloss.NewStyle().
-		Foreground(White).
-		Background(DarkGray).
-		Padding(0, 1)
+	InactiveNavStyle = lipgloss.NewStyle().
+				Foreground(Gray)
+
+	HelpStyle = lipgloss.NewStyle().
+			Foreground(Dim)
 
 	// Song card
-	SongCard = lipgloss.NewStyle().
+	SongCardStyle = lipgloss.NewStyle().
 			Border(lipgloss.RoundedBorder()).
 			BorderForeground(Magenta).
-			Padding(1, 2).
-			MarginTop(1)
+			Padding(1, 2)
 
-	// Blog post
-	PostTitle = lipgloss.NewStyle().
-			Foreground(Cyan).
-			Bold(true)
-
-	PostDate = lipgloss.NewStyle().
-			Foreground(Gray)
-
-	PostBody = lipgloss.NewStyle().
-			Foreground(White).
-			MarginTop(1)
-
-	// Help bar
-	HelpStyle = lipgloss.NewStyle().
-			Foreground(DarkGray).
-			MarginTop(1)
-
-	// Cursor for lists
+	// Blog
 	CursorStyle = lipgloss.NewStyle().
 			Foreground(Magenta).
 			Bold(true)
 
-	// Container
-	Container = lipgloss.NewStyle().
-			Padding(1, 2)
+	PostTitleStyle = lipgloss.NewStyle().
+			Foreground(Cyan).
+			Bold(true)
+
+	PostDateStyle = lipgloss.NewStyle().
+			Foreground(Dim)
+
+	PostBodyStyle = lipgloss.NewStyle().
+			Foreground(lipgloss.Color("#CCCCCC"))
+
+	// Badge
+	BadgeStyle = func(bg string) lipgloss.Style {
+		return lipgloss.NewStyle().
+			Foreground(lipgloss.Color("#FFFFFF")).
+			Background(lipgloss.Color(bg)).
+			Padding(0, 1)
+	}
 )
