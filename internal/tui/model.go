@@ -351,9 +351,18 @@ func (m Model) viewAbout(t Translations) string {
 	s.WriteString(" " + SubtitleStyle.Render(t.Role) + "\n\n")
 	s.WriteString(" " + DimStyle.Render(t.Contact) + "\n")
 	s.WriteString(" " + LinkStyle.Render(t.Website) + "\n\n")
-	s.WriteString(" " + AccentStyle.Render(t.TechStackTitle) + "\n\n")
+
+	for _, line := range strings.Split(t.AboutMe, "\n") {
+		s.WriteString(" " + BodyStyle.Render(line) + "\n")
+	}
+
+	s.WriteString("\n " + AccentStyle.Render(t.TechStackTitle) + "\n\n")
 	s.WriteString(" " + strings.Join(badges[:4], " ") + "\n")
-	s.WriteString(" " + strings.Join(badges[4:], " ") + "\n")
+	s.WriteString(" " + strings.Join(badges[4:], " ") + "\n\n")
+
+	for _, line := range strings.Split(t.AboutProject, "\n") {
+		s.WriteString(" " + DimStyle.Render(line) + "\n")
+	}
 
 	return s.String()
 }
