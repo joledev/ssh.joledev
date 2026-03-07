@@ -3,7 +3,9 @@ package tui
 import (
 	_ "embed"
 	"fmt"
+	"regexp"
 	"strings"
+	"time"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
@@ -22,6 +24,8 @@ const (
 	SectionSong
 )
 
+type tickMsg time.Time
+
 type Model struct {
 	Lang        Lang
 	Section     Section
@@ -33,6 +37,7 @@ type Model struct {
 	BlogCursor  int
 	ReadingPost bool
 	Quitting    bool
+	Frame       int
 }
 
 func NewModel(songsPath, postsDir string) Model {
@@ -47,12 +52,22 @@ func NewModel(songsPath, postsDir string) Model {
 	}
 }
 
+func tickCmd() tea.Cmd {
+	return tea.Tick(time.Millisecond*400, func(t time.Time) tea.Msg {
+		return tickMsg(t)
+	})
+}
+
 func (m Model) Init() tea.Cmd {
-	return nil
+	return tickCmd()
 }
 
 func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
+	case tickMsg:
+		m.Frame++
+		return m, tickCmd()
+
 	case tea.WindowSizeMsg:
 		m.Width = msg.Width
 		m.Height = msg.Height
@@ -188,77 +203,78 @@ func (m Model) viewHome(t Translations) string {
 	artLines := strings.Split(strings.TrimSpace(brailleArt), "\n")
 	artWidth := 0
 	for _, line := range artLines {
-		if len([]rune(line)) > artWidth {
-			artWidth = len([]rune(line))
+		w := visualWidth(line)
+		if w > artWidth {
+			artWidth = w
 		}
 	}
 
-	// Right side text
+	// Isometric3 figlet "joledev"
+	logo := []string{
+		"      ___           ___       ___           ___           ___           ___     ",
+		"     /__/\\         /  /\\     /  /\\         /  /\\         /  /\\         /__/\\    ",
+		"    |  |::\\       /  /::\\   /  /::\\       /  /::\\       /  /:/_        \\  \\:\\   ",
+		"    |  |:|:\\     /  /:/\\:\\ /  /:/\\:\\     /  /:/\\:\\     /  /:/ /\\        \\  \\:\\  ",
+		"  __|__|:|\\:\\   /  /:/  \\:\\  /:/  \\:\\   /  /:/  \\:\\   /  /:/ /:/_   _____\\__\\:\\ ",
+		" /__/::::| \\:\\ /__/:/ \\__\\:/__/:/ \\__\\:\\ /__/:/ \\__\\:\\ /__/:/ /:/ /\\ /__/::::::::\\",
+		" \\  \\:\\~~\\__\\/ \\  \\:\\ /  /:\\  \\:\\ /  /:/ \\  \\:\\ /  /:/ \\  \\:\\/:/ /:/ \\  \\:\\~~\\~~\\/",
+		"  \\  \\:\\        \\  \\:\\  /:/ \\  \\:\\  /:/   \\  \\:\\  /:/   \\  \\::/ /:/   \\  \\:\\  ~~~ ",
+		"   \\  \\:\\        \\  \\:\\/:/   \\  \\:\\/:/     \\  \\:\\/:/     \\  \\:\\/:/     \\  \\:\\     ",
+		"    \\  \\:\\        \\  \\::/     \\  \\::/       \\  \\::/       \\  \\::/       \\  \\:\\    ",
+		"     \\__\\/         \\__\\/       \\__\\/         \\__\\/         \\__\\/         \\__\\/    ",
+	}
+
+	// Animated sparkles
+	sparkles := []string{"·", "+", "*", "✦", "·", "+"}
+	sparkleColors := []lipgloss.Color{Magenta, Cyan, Pink, Magenta, Cyan, Pink}
+
+	s1 := lipgloss.NewStyle().Foreground(sparkleColors[m.Frame%len(sparkleColors)]).Render(sparkles[m.Frame%len(sparkles)])
+	s2 := lipgloss.NewStyle().Foreground(sparkleColors[(m.Frame+2)%len(sparkleColors)]).Render(sparkles[(m.Frame+1)%len(sparkles)])
+	s3 := lipgloss.NewStyle().Foreground(sparkleColors[(m.Frame+4)%len(sparkleColors)]).Render(sparkles[(m.Frame+3)%len(sparkles)])
+
 	rightLines := []string{
 		"",
-		"",
-		"",
-		"",
-		"",
-		NameStyle.Render("      _ _     _"),
-		NameStyle.Render("     (_) |___| |___ __ __"),
-		NameStyle.Render("     | | / _ \\ / -_)\\ V /"),
-		NameStyle.Render("    _/ |_\\___/_\\___| \\_/"),
-		NameStyle.Render("   |__/"),
-		"",
-		SubtitleStyle.Render("   " + t.Role),
-		"",
-		"",
-		BodyStyle.Render("   " + t.Welcome + "."),
-		"",
-		DimStyle.Render("   " + t.Contact),
-		DimStyle.Render("   " + t.Website),
+		"  " + s1,
 	}
-
-	// Build side by side
-	maxLines := len(artLines)
-	if len(rightLines) > maxLines {
-		maxLines = len(rightLines)
+	for i, line := range logo {
+		prefix := "  "
+		if i == 0 {
+			prefix = s2 + " "
+		}
+		if i == len(logo)-1 {
+			line = line + " " + s3
+		}
+		rightLines = append(rightLines, NameStyle.Render(prefix+line))
 	}
+	rightLines = append(rightLines,
+		"",
+		SubtitleStyle.Render("  "+t.Role),
+		"",
+		BodyStyle.Render("  "+t.Welcome+"."),
+		"",
+		DimStyle.Render("  "+t.Contact),
+		DimStyle.Render("  "+t.Website),
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+	)
 
-	var rows []string
-	for i := 0; i < maxLines; i++ {
-		left := ""
-		if i < len(artLines) {
-			left = ArtStyle.Render(artLines[i])
-		}
-		// Pad left side
-		leftPadded := left
-		if i < len(artLines) {
-			runeCount := len([]rune(artLines[i]))
-			if runeCount < artWidth {
-				leftPadded = left + strings.Repeat(" ", artWidth-runeCount)
-			}
-		} else {
-			leftPadded = strings.Repeat(" ", artWidth)
-		}
-
-		right := ""
-		if i < len(rightLines) {
-			right = rightLines[i]
-		}
-
-		rows = append(rows, " "+leftPadded+"  "+right)
-	}
-
-	return strings.Join(rows, "\n")
+	return buildSideBySide(artLines, rightLines, artWidth)
 }
 
 func (m Model) viewAbout(t Translations) string {
 	artLines := strings.Split(strings.TrimSpace(brailleArt), "\n")
 	artWidth := 0
 	for _, line := range artLines {
-		if len([]rune(line)) > artWidth {
-			artWidth = len([]rune(line))
+		w := visualWidth(line)
+		if w > artWidth {
+			artWidth = w
 		}
 	}
 
-	// Tech badges
 	techs := []struct{ name, bg string }{
 		{"PHP", "#777BB4"},
 		{"Laravel", "#FF2D20"},
@@ -278,58 +294,29 @@ func (m Model) viewAbout(t Translations) string {
 		"",
 		"",
 		"",
-		NameStyle.Render("   " + t.Name),
-		SubtitleStyle.Render("   " + t.Role),
+		NameStyle.Render("  " + t.Name),
+		SubtitleStyle.Render("  " + t.Role),
 		"",
-		DimStyle.Render("   " + t.Contact),
-		LinkStyle.Render("   " + t.Website),
-		"",
-		"",
-		AccentStyle.Render("   " + t.TechStackTitle),
-		"",
-		"   " + strings.Join(badges[:4], " "),
-		"   " + strings.Join(badges[4:], " "),
+		DimStyle.Render("  " + t.Contact),
+		LinkStyle.Render("  " + t.Website),
 		"",
 		"",
-		BodyStyle.Render("   " + t.CoverTitle),
+		AccentStyle.Render("  " + t.TechStackTitle),
+		"",
+		"  " + strings.Join(badges[:4], " "),
+		"  " + strings.Join(badges[4:], " "),
+		"",
+		"",
+		BodyStyle.Render("  " + t.CoverTitle),
 		"",
 	}
 
-	// Wrap the song explanation
 	explainLines := strings.Split(t.CoverExplain, "\n")
 	for _, line := range explainLines {
-		rightLines = append(rightLines, DimStyle.Render("   "+line))
+		rightLines = append(rightLines, DimStyle.Render("  "+line))
 	}
 
-	maxLines := len(artLines)
-	if len(rightLines) > maxLines {
-		maxLines = len(rightLines)
-	}
-
-	var rows []string
-	for i := 0; i < maxLines; i++ {
-		left := ""
-		if i < len(artLines) {
-			left = ArtStyle.Render(artLines[i])
-		}
-		leftPadded := left
-		if i < len(artLines) {
-			runeCount := len([]rune(artLines[i]))
-			if runeCount < artWidth {
-				leftPadded = left + strings.Repeat(" ", artWidth-runeCount)
-			}
-		} else {
-			leftPadded = strings.Repeat(" ", artWidth)
-		}
-
-		right := ""
-		if i < len(rightLines) {
-			right = rightLines[i]
-		}
-		rows = append(rows, " "+leftPadded+"  "+right)
-	}
-
-	return strings.Join(rows, "\n")
+	return buildSideBySide(artLines, rightLines, artWidth)
 }
 
 func (m Model) viewBlog(t Translations) string {
@@ -396,4 +383,45 @@ func (m Model) viewSong(t Translations) string {
 	}
 
 	return s.String()
+}
+
+var ansiRegex = regexp.MustCompile(`\x1b\[[0-9;]*m`)
+
+func stripAnsi(s string) string {
+	return ansiRegex.ReplaceAllString(s, "")
+}
+
+func visualWidth(s string) int {
+	return len([]rune(stripAnsi(s)))
+}
+
+func buildSideBySide(artLines []string, rightLines []string, artVisualWidth int) string {
+	maxLines := len(artLines)
+	if len(rightLines) > maxLines {
+		maxLines = len(rightLines)
+	}
+
+	var rows []string
+	for i := 0; i < maxLines; i++ {
+		left := ""
+		leftVisual := 0
+		if i < len(artLines) {
+			left = artLines[i]
+			leftVisual = visualWidth(artLines[i])
+		}
+
+		padding := ""
+		if leftVisual < artVisualWidth {
+			padding = strings.Repeat(" ", artVisualWidth-leftVisual)
+		}
+
+		right := ""
+		if i < len(rightLines) {
+			right = rightLines[i]
+		}
+
+		rows = append(rows, " "+left+padding+"  "+right)
+	}
+
+	return strings.Join(rows, "\n")
 }
