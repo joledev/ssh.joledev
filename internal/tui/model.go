@@ -1,7 +1,6 @@
 package tui
 
 import (
-	_ "embed"
 	"fmt"
 	"regexp"
 	"strings"
@@ -9,46 +8,59 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
+	"github.com/joledev/ssh.joledev/internal/art"
 	"github.com/joledev/ssh.joledev/internal/data"
 )
-
-//go:embed ascii_data.txt
-var brailleArt string
 
 type Section int
 
 const (
-	SectionHome Section = iota
+	SectionSong Section = iota
 	SectionAbout
 	SectionBlog
-	SectionSong
 )
+
+const coverArtWidth = 55
 
 type tickMsg time.Time
 
+type coverMsg struct {
+	mono  string
+	color string
+	err   error
+}
+
 type Model struct {
-	Lang        Lang
-	Section     Section
-	Width       int
-	Height      int
-	Songs       []data.Song
-	Posts       []data.Post
-	PostsDir    string
-	BlogCursor  int
-	ReadingPost bool
-	Quitting    bool
-	Frame       int
+	Lang         Lang
+	Section      Section
+	Width        int
+	Height       int
+	Songs        []data.Song
+	Posts        []data.Post
+	PostsDir     string
+	BlogCursor   int
+	ReadingPost  bool
+	Quitting     bool
+	Frame        int
+	TodaySong    data.Song
+	CoverMono    string
+	CoverColor   string
+	ColorMode    bool
+	CoverLoading bool
 }
 
 func NewModel(songsPath, postsDir string) Model {
 	songs, _ := data.LoadSongs(songsPath)
 	posts, _ := data.LoadPosts(postsDir, "es")
+	todaySong := data.SongOfTheDay(songs)
 
 	return Model{
-		Lang:     LangES,
-		Songs:    songs,
-		Posts:    posts,
-		PostsDir: postsDir,
+		Lang:         LangES,
+		Songs:        songs,
+		Posts:        posts,
+		PostsDir:     postsDir,
+		TodaySong:    todaySong,
+		CoverLoading: true,
 	}
 }
 
@@ -58,8 +70,20 @@ func tickCmd() tea.Cmd {
 	})
 }
 
+func fetchCoverCmd(trackURL string) tea.Cmd {
+	return func() tea.Msg {
+		img, err := art.FetchCoverImage(trackURL)
+		if err != nil {
+			return coverMsg{err: err}
+		}
+		mono := art.ImageToBraille(img, coverArtWidth, false)
+		color := art.ImageToBraille(img, coverArtWidth, true)
+		return coverMsg{mono: mono, color: color}
+	}
+}
+
 func (m Model) Init() tea.Cmd {
-	return tickCmd()
+	return tea.Batch(tickCmd(), fetchCoverCmd(m.TodaySong.URL))
 }
 
 func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
@@ -67,6 +91,14 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tickMsg:
 		m.Frame++
 		return m, tickCmd()
+
+	case coverMsg:
+		m.CoverLoading = false
+		if msg.err == nil {
+			m.CoverMono = msg.mono
+			m.CoverColor = msg.color
+		}
+		return m, nil
 
 	case tea.WindowSizeMsg:
 		m.Width = msg.Width
@@ -92,7 +124,7 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 				if m.Section > 0 {
 					m.Section--
 				} else {
-					m.Section = SectionSong
+					m.Section = SectionBlog
 				}
 				m.BlogCursor = 0
 				m.ReadingPost = false
@@ -101,14 +133,18 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 		case "right":
 			if !m.ReadingPost {
-				if m.Section < SectionSong {
+				if m.Section < SectionBlog {
 					m.Section++
 				} else {
-					m.Section = SectionHome
+					m.Section = SectionSong
 				}
 				m.BlogCursor = 0
 				m.ReadingPost = false
 			}
+			return m, nil
+
+		case "c", "C":
+			m.ColorMode = !m.ColorMode
 			return m, nil
 
 		case "l", "L":
@@ -157,19 +193,16 @@ func (m Model) View() string {
 	var view string
 
 	switch m.Section {
-	case SectionHome:
-		view = m.viewHome(t)
+	case SectionSong:
+		view = m.viewSong(t)
 	case SectionAbout:
 		view = m.viewAbout(t)
 	case SectionBlog:
 		view = m.viewBlog(t)
-	case SectionSong:
-		view = m.viewSong(t)
 	}
 
-	// Navigation bar at bottom
 	nav := m.renderNav(t)
-	help := HelpStyle.Render("[<- -> to select · enter to open · L lang · q to quit]")
+	help := HelpStyle.Render("[<- -> nav · C color · L lang · q quit]")
 
 	return fmt.Sprintf("%s\n\n %s\n\n %s\n", view, nav, help)
 }
@@ -179,10 +212,9 @@ func (m Model) renderNav(t Translations) string {
 		name    string
 		section Section
 	}{
-		{t.TabHome, SectionHome},
+		{t.TabSong, SectionSong},
 		{t.TabAbout, SectionAbout},
 		{t.TabBlog, SectionBlog},
-		{t.TabSong, SectionSong},
 	}
 
 	var parts []string
@@ -199,15 +231,8 @@ func (m Model) renderNav(t Translations) string {
 	return " " + strings.Join(parts, "    ")
 }
 
-func (m Model) viewHome(t Translations) string {
-	artLines := strings.Split(strings.TrimSpace(brailleArt), "\n")
-	artWidth := 0
-	for _, line := range artLines {
-		w := visualWidth(line)
-		if w > artWidth {
-			artWidth = w
-		}
-	}
+func (m Model) viewSong(t Translations) string {
+	song := m.TodaySong
 
 	// smkeyboard figlet "JoleDev"
 	logo := []string{
@@ -243,23 +268,56 @@ func (m Model) viewHome(t Translations) string {
 		"",
 		SubtitleStyle.Render("  "+t.Role),
 		"",
-		BodyStyle.Render("  "+t.Welcome+"."),
+		"  "+AccentStyle.Render(t.SongOfTheDay),
 		"",
-		DimStyle.Render("  "+t.Contact),
-		DimStyle.Render("  "+t.Website),
-		"",
-		"",
-		"",
-		"",
-		"",
+		fmt.Sprintf("  %s  %s",
+			AccentStyle.Render(t.SongTitle+":"),
+			lipgloss.NewStyle().Foreground(White).Render(song.Title)),
+		fmt.Sprintf("  %s  %s",
+			AccentStyle.Render(t.SongArtist+":"),
+			lipgloss.NewStyle().Foreground(White).Render(song.Artist)),
+		fmt.Sprintf("  %s  %s",
+			AccentStyle.Render(t.SongAlbum+":"),
+			lipgloss.NewStyle().Foreground(White).Render(song.Album)),
 		"",
 	)
 
-	return buildSideBySide(artLines, rightLines, artWidth)
-}
+	if song.URL != "" {
+		rightLines = append(rightLines,
+			"  "+DimStyle.Render(t.SongListenAt),
+			"  "+LinkStyle.Render(song.URL),
+			"",
+		)
+	}
 
-func (m Model) viewAbout(t Translations) string {
-	artLines := strings.Split(strings.TrimSpace(brailleArt), "\n")
+	rightLines = append(rightLines,
+		"  "+DimStyle.Render(t.Contact),
+		"  "+DimStyle.Render(t.Website),
+	)
+
+	if m.CoverLoading {
+		loadingLines := []string{"", "", DimStyle.Render("  Loading cover art...")}
+		for len(loadingLines) < 27 {
+			loadingLines = append(loadingLines, "")
+		}
+		return buildSideBySide(loadingLines, rightLines, coverArtWidth)
+	}
+
+	coverArt := m.CoverMono
+	if m.ColorMode {
+		coverArt = m.CoverColor
+	}
+
+	if coverArt == "" {
+		var s strings.Builder
+		s.WriteString("\n")
+		for _, line := range rightLines {
+			s.WriteString(line + "\n")
+		}
+		return s.String()
+	}
+
+	artLines := strings.Split(coverArt, "\n")
 	artWidth := 0
 	for _, line := range artLines {
 		w := visualWidth(line)
@@ -268,6 +326,10 @@ func (m Model) viewAbout(t Translations) string {
 		}
 	}
 
+	return buildSideBySide(artLines, rightLines, artWidth)
+}
+
+func (m Model) viewAbout(t Translations) string {
 	techs := []struct{ name, bg string }{
 		{"PHP", "#777BB4"},
 		{"Laravel", "#FF2D20"},
@@ -283,33 +345,17 @@ func (m Model) viewAbout(t Translations) string {
 		badges = append(badges, BadgeStyle(tech.bg).Render(tech.name))
 	}
 
-	rightLines := []string{
-		"",
-		"",
-		"",
-		NameStyle.Render("  " + t.Name),
-		SubtitleStyle.Render("  " + t.Role),
-		"",
-		DimStyle.Render("  " + t.Contact),
-		LinkStyle.Render("  " + t.Website),
-		"",
-		"",
-		AccentStyle.Render("  " + t.TechStackTitle),
-		"",
-		"  " + strings.Join(badges[:4], " "),
-		"  " + strings.Join(badges[4:], " "),
-		"",
-		"",
-		BodyStyle.Render("  " + t.CoverTitle),
-		"",
-	}
+	var s strings.Builder
+	s.WriteString("\n")
+	s.WriteString(" " + NameStyle.Render(t.Name) + "\n")
+	s.WriteString(" " + SubtitleStyle.Render(t.Role) + "\n\n")
+	s.WriteString(" " + DimStyle.Render(t.Contact) + "\n")
+	s.WriteString(" " + LinkStyle.Render(t.Website) + "\n\n")
+	s.WriteString(" " + AccentStyle.Render(t.TechStackTitle) + "\n\n")
+	s.WriteString(" " + strings.Join(badges[:4], " ") + "\n")
+	s.WriteString(" " + strings.Join(badges[4:], " ") + "\n")
 
-	explainLines := strings.Split(t.CoverExplain, "\n")
-	for _, line := range explainLines {
-		rightLines = append(rightLines, DimStyle.Render("  "+line))
-	}
-
-	return buildSideBySide(artLines, rightLines, artWidth)
+	return s.String()
 }
 
 func (m Model) viewBlog(t Translations) string {
@@ -347,34 +393,6 @@ func (m Model) viewBlog(t Translations) string {
 	}
 
 	s.WriteString("\n " + DimStyle.Render("[enter "+t.ReadMore+"]"))
-	return s.String()
-}
-
-func (m Model) viewSong(t Translations) string {
-	song := data.SongOfTheDay(m.Songs)
-
-	var s strings.Builder
-	s.WriteString("\n")
-	s.WriteString(" " + TitleStyle.Render(t.SongOfTheDay) + "\n\n")
-
-	card := fmt.Sprintf(
-		" %s  %s\n %s  %s\n %s  %s",
-		AccentStyle.Render(t.SongTitle+":"),
-		lipgloss.NewStyle().Foreground(White).Render(song.Title),
-		AccentStyle.Render(t.SongArtist+":"),
-		lipgloss.NewStyle().Foreground(White).Render(song.Artist),
-		AccentStyle.Render(t.SongAlbum+":"),
-		lipgloss.NewStyle().Foreground(White).Render(song.Album),
-	)
-
-	s.WriteString(SongCardStyle.Render(card))
-	s.WriteString("\n\n")
-
-	if song.URL != "" {
-		s.WriteString(" " + DimStyle.Render(t.SongListenAt) + "\n")
-		s.WriteString(" " + LinkStyle.Render(song.URL) + "\n")
-	}
-
 	return s.String()
 }
 
