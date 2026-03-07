@@ -56,11 +56,11 @@ Me gusta que las cosas se vean bien y funcionen bien.
 Trabajo en un entorno minimalista: codigo limpio,
 ordenado, que no crezca al infinito y me permita
 crecer con el sin caer en la sobreingenieria.`,
-		AboutProject: `Este proyecto nacio de un reel que vi de moriliu y
-decidi darle un enfoque mas personal: recomendar
-canciones, compartir un poco de lo que me gusta --
-la musica, el arte, la filosofia y la comida.
-Dejar un poco de mi en algo minimalista.`,
+		AboutProject: `Este proyecto nacio de un reel de Instagram de
+@morilliu y decidi darle un enfoque mas personal:
+recomendar canciones, compartir un poco de lo que
+me gusta -- la musica, el arte, la filosofia y la
+comida. Dejar un poco de mi en algo minimalista.`,
 	},
 	LangEN: {
 		TabAbout:       "About",
@@ -89,10 +89,10 @@ I like things that look good and work well.
 I work in a minimalist environment: clean code,
 organized, that doesn't grow to infinity and lets
 me grow alongside it without over-engineering.`,
-		AboutProject: `This project was born from a reel I saw from moriliu
-and I decided to give it a more personal spin:
-recommending songs, sharing a bit of what I enjoy --
-music, art, philosophy, and food.
+		AboutProject: `This project was born from an Instagram reel by
+@morilliu and I decided to give it a more personal
+spin: recommending songs, sharing a bit of what I
+enjoy -- music, art, philosophy, and food.
 Leaving a piece of myself in something minimalist.`,
 	},
 }
