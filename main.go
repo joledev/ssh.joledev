@@ -20,7 +20,7 @@ import (
 func main() {
 	host := envOr("SSH_HOST", "0.0.0.0")
 	port := envOr("SSH_PORT", "2222")
-	keyPath := envOr("SSH_KEY_PATH", ".ssh")
+	keyPath := envOr("SSH_KEY_PATH", ".ssh/host_key")
 	songsPath := envOr("SONGS_PATH", "")
 	postsDir := envOr("POSTS_DIR", "posts")
 

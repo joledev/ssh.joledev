@@ -26,7 +26,7 @@ RestrictNamespaces=true
 # Environment
 Environment=SSH_HOST=0.0.0.0
 Environment=SSH_PORT=2223
-Environment=SSH_KEY_PATH=/opt/ssh-joledev/.ssh
+Environment=SSH_KEY_PATH=/opt/ssh-joledev/.ssh/host_key
 Environment=POSTS_DIR=/opt/ssh-joledev/posts
 Environment=SONGS_PATH=/opt/ssh-joledev/data/songs.txt
 
