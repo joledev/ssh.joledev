@@ -14,7 +14,7 @@ import (
 var spotifyTrackRegex = regexp.MustCompile(`track/([a-zA-Z0-9]+)`)
 
 // FetchSpotifyCode downloads a Spotify Code barcode and renders it using half-block characters.
-func FetchSpotifyCode(trackURL string, width int) (string, error) {
+func FetchSpotifyCode(trackURL string, width, height int) (string, error) {
 	match := spotifyTrackRegex.FindStringSubmatch(trackURL)
 	if match == nil {
 		return "", fmt.Errorf("no track ID found in URL")
@@ -42,22 +42,24 @@ func FetchSpotifyCode(trackURL string, width int) (string, error) {
 		return "", fmt.Errorf("spotify code decode: %w", err)
 	}
 
-	return imageToBlocks(img, width), nil
+	return imageToBlocks(img, width, height), nil
 }
 
 // imageToBlocks renders an image using half-block unicode characters.
 // Each character represents 2 vertical pixels using ▀▄█ and space.
 // Much better than braille for geometric/barcode images.
-func imageToBlocks(img image.Image, width int) string {
+func imageToBlocks(img image.Image, width, rows int) string {
 	bounds := img.Bounds()
 	srcW := bounds.Dx()
 	srcH := bounds.Dy()
 
 	charW := width
-	// 2 pixels per character vertically, adjust for terminal char aspect ratio (~1:2)
-	charH := int(float64(charW) * float64(srcH) / float64(srcW) * 2)
-	if charH%2 != 0 {
-		charH++
+	charH := rows * 2 // 2 pixels per row of half-blocks
+	if charH == 0 {
+		charH = int(float64(charW) * float64(srcH) / float64(srcW) * 2)
+		if charH%2 != 0 {
+			charH++
+		}
 	}
 
 	// Resize to target pixel dimensions
