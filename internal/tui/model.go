@@ -30,6 +30,11 @@ type coverMsg struct {
 	err   error
 }
 
+type spotifyCodeMsg struct {
+	code string
+	err  error
+}
+
 type Model struct {
 	Lang         Lang
 	Section      Section
@@ -47,15 +52,13 @@ type Model struct {
 	CoverColor   string
 	ColorMode    bool
 	CoverLoading bool
-	QRCode       string
+	SpotifyCode  string
 }
 
 func NewModel(songsPath, postsDir string) Model {
 	songs, _ := data.LoadSongs(songsPath)
 	posts, _ := data.LoadPosts(postsDir, "es")
 	todaySong := data.SongOfTheDay(songs)
-
-	qrStr, _ := art.GenerateQR(todaySong.URL)
 
 	return Model{
 		Lang:         LangES,
@@ -64,7 +67,6 @@ func NewModel(songsPath, postsDir string) Model {
 		PostsDir:     postsDir,
 		TodaySong:    todaySong,
 		CoverLoading: true,
-		QRCode:       qrStr,
 	}
 }
 
@@ -86,8 +88,15 @@ func fetchCoverCmd(trackURL string) tea.Cmd {
 	}
 }
 
+func fetchSpotifyCodeCmd(trackURL string) tea.Cmd {
+	return func() tea.Msg {
+		code, err := art.FetchSpotifyCode(trackURL, 30)
+		return spotifyCodeMsg{code: code, err: err}
+	}
+}
+
 func (m Model) Init() tea.Cmd {
-	return tea.Batch(tickCmd(), fetchCoverCmd(m.TodaySong.URL))
+	return tea.Batch(tickCmd(), fetchCoverCmd(m.TodaySong.URL), fetchSpotifyCodeCmd(m.TodaySong.URL))
 }
 
 func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
@@ -101,6 +110,12 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		if msg.err == nil {
 			m.CoverMono = msg.mono
 			m.CoverColor = msg.color
+		}
+		return m, nil
+
+	case spotifyCodeMsg:
+		if msg.err == nil {
+			m.SpotifyCode = msg.code
 		}
 		return m, nil
 
@@ -298,13 +313,13 @@ func (m Model) viewSong(t Translations) string {
 		"",
 	}
 
-	if m.QRCode != "" {
+	if m.SpotifyCode != "" {
 		rightLines = append(rightLines,
 			"  "+DimStyle.Render(t.SongListenAt),
 			"",
 		)
-		for _, qrLine := range strings.Split(m.QRCode, "\n") {
-			rightLines = append(rightLines, "  "+qrLine)
+		for _, codeLine := range strings.Split(m.SpotifyCode, "\n") {
+			rightLines = append(rightLines, "  "+codeLine)
 		}
 		rightLines = append(rightLines, "")
 	}
