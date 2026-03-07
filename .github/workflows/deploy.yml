@@ -46,6 +46,9 @@ jobs:
             sudo useradd --system --no-create-home --shell /usr/sbin/nologin sshjoledev 2>/dev/null || true
             sudo mkdir -p "$APP_DIR"/{.ssh,data,posts/es,posts/en}
 
+            # Stop service before replacing binary
+            sudo systemctl stop ssh-joledev 2>/dev/null || true
+
             # Copy binary and data
             sudo cp "$DEPLOY_DIR/ssh.joledev" "$APP_DIR/ssh.joledev"
             sudo cp -r "$DEPLOY_DIR/data/"* "$APP_DIR/data/" 2>/dev/null || true
