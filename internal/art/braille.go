@@ -92,7 +92,6 @@ func ImageToBraille(img image.Image, width int, colorMode bool) string {
 				continue
 			}
 
-			// Color mode
 			if code == 0 {
 				if bgCount > 0 {
 					r := uint8(bgR / float64(bgCount))

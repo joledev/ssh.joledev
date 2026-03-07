@@ -8,6 +8,7 @@ import (
 	"math"
 	"net/http"
 	"regexp"
+	"strings"
 	"time"
 )
 
@@ -45,8 +46,7 @@ func FetchSpotifyCode(trackURL string, width int) (string, error) {
 	return spotifyCodeToBraille(img, width), nil
 }
 
-// spotifyCodeToBraille renders a Spotify Code image as braille art
-// using parameters optimized for scanability (8A: contrast=1.5, sharpness=2.0, threshold=128).
+// spotifyCodeToBraille renders a Spotify Code image as braille art optimized for scanability.
 func spotifyCodeToBraille(img image.Image, width int) string {
 	bounds := img.Bounds()
 	srcW := bounds.Dx()
@@ -65,7 +65,6 @@ func spotifyCodeToBraille(img image.Image, width int) string {
 	enhanceContrast(gray, pixW, pixH, 1.5)
 	sharpen(gray, pixW, pixH, 2.0)
 
-	// Simple threshold (no dithering — cleaner for barcodes)
 	for y := 0; y < pixH; y++ {
 		for x := 0; x < pixW; x++ {
 			if gray[y][x] < 128 {
@@ -101,14 +100,7 @@ func spotifyCodeToBraille(img image.Image, width int) string {
 		lines = append(lines, string(line))
 	}
 
-	result := ""
-	for i, l := range lines {
-		if i > 0 {
-			result += "\n"
-		}
-		result += l
-	}
-	return result
+	return strings.Join(lines, "\n")
 }
 
 // sharpen applies an unsharp mask to enhance edges.

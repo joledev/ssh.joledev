@@ -23,5 +23,6 @@ ssh.joledev.exe
 .DS_Store
 Thumbs.db
 
-# Image source (not needed in prod)
-NoLoveSong.jpg
+# Dev artifacts
+NoLoveSong.*
+scripts/__pycache__/

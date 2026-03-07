@@ -20,7 +20,6 @@ func LoadPosts(postsDir string, lang string) ([]Post, error) {
 	langDir := filepath.Join(postsDir, lang)
 	entries, err := os.ReadDir(langDir)
 	if err != nil {
-		// Fallback: try root posts dir
 		entries, err = os.ReadDir(postsDir)
 		if err != nil {
 			return nil, err
@@ -46,20 +45,19 @@ func LoadPosts(postsDir string, lang string) ([]Post, error) {
 			Content: string(content),
 		}
 
-		// Parse frontmatter-like first lines: "# Title" and "date: YYYY-MM-DD"
 		lines := strings.SplitN(string(content), "\n", 10)
-		body_start := 0
+		bodyStart := 0
 		for i, line := range lines {
 			line = strings.TrimSpace(line)
 			if strings.HasPrefix(line, "# ") {
 				post.Title = strings.TrimPrefix(line, "# ")
-				body_start = i + 1
+				bodyStart = i + 1
 			} else if strings.HasPrefix(line, "date:") {
 				dateStr := strings.TrimSpace(strings.TrimPrefix(line, "date:"))
 				if t, err := time.Parse("2006-01-02", dateStr); err == nil {
 					post.Date = t
 				}
-				body_start = i + 1
+				bodyStart = i + 1
 			} else if line == "" {
 				continue
 			} else {
@@ -77,9 +75,8 @@ func LoadPosts(postsDir string, lang string) ([]Post, error) {
 			}
 		}
 
-		// Set body to everything after frontmatter
-		if body_start > 0 && body_start < len(lines) {
-			post.Content = strings.TrimSpace(strings.Join(lines[body_start:], "\n"))
+		if bodyStart > 0 && bodyStart < len(lines) {
+			post.Content = strings.TrimSpace(strings.Join(lines[bodyStart:], "\n"))
 		}
 
 		posts = append(posts, post)

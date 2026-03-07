@@ -86,7 +86,6 @@ func SongOfTheDay(songs []Song) Song {
 	now := time.Now().In(loc)
 	dateStr := now.Format("2006-01-02")
 
-	// Hash the date to get a deterministic index
 	h := sha256.Sum256([]byte(dateStr))
 	seed := int64(binary.BigEndian.Uint64(h[:8]))
 	r := rand.New(rand.NewSource(seed))

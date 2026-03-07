@@ -232,7 +232,6 @@ func (m Model) View() string {
 		view = m.viewBlog(t)
 	}
 
-	// Show animated logo on all views except when reading a post
 	showLogo := !(m.Section == SectionBlog && m.ReadingPost)
 
 	var header string
