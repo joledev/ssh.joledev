@@ -205,10 +205,52 @@ func (m Model) View() string {
 		view = m.viewBlog(t)
 	}
 
+	// Show animated logo on all views except when reading a post
+	showLogo := !(m.Section == SectionBlog && m.ReadingPost)
+
+	var header string
+	if showLogo {
+		header = m.renderLogo()
+	}
+
 	nav := m.renderNav(t)
 	help := HelpStyle.Render("[<- -> nav · C color · L lang · q quit]")
 
+	if header != "" {
+		return fmt.Sprintf("%s\n%s\n\n %s\n\n %s\n", header, view, nav, help)
+	}
 	return fmt.Sprintf("%s\n\n %s\n\n %s\n", view, nav, help)
+}
+
+func (m Model) renderLogo() string {
+	logo := []string{
+		" ____ ____ ____ ____ ____ ____ ____ ",
+		"||J |||o |||l |||e |||D |||e |||v ||",
+		"||__|||__|||__|||__|||__|||__|||__||",
+		"|/__\\|/__\\|/__\\|/__\\|/__\\|/__\\|/__\\|",
+	}
+
+	sparkles := []string{"·", "+", "*", "✦", "·", "+"}
+	sparkleColors := []lipgloss.Color{Magenta, Cyan, Pink, Magenta, Cyan, Pink}
+
+	s1 := lipgloss.NewStyle().Foreground(sparkleColors[m.Frame%len(sparkleColors)]).Render(sparkles[m.Frame%len(sparkles)])
+	s2 := lipgloss.NewStyle().Foreground(sparkleColors[(m.Frame+2)%len(sparkleColors)]).Render(sparkles[(m.Frame+1)%len(sparkles)])
+	s3 := lipgloss.NewStyle().Foreground(sparkleColors[(m.Frame+4)%len(sparkleColors)]).Render(sparkles[(m.Frame+3)%len(sparkles)])
+
+	var lines []string
+	lines = append(lines, "  "+s1)
+	for i, line := range logo {
+		prefix := "  "
+		if i == 0 {
+			prefix = s2 + " "
+		}
+		if i == len(logo)-1 {
+			line = line + " " + s3
+		}
+		lines = append(lines, NameStyle.Render(prefix+line))
+	}
+
+	return strings.Join(lines, "\n")
 }
 
 func (m Model) renderNav(t Translations) string {
@@ -238,41 +280,11 @@ func (m Model) renderNav(t Translations) string {
 func (m Model) viewSong(t Translations) string {
 	song := m.TodaySong
 
-	// smkeyboard figlet "JoleDev"
-	logo := []string{
-		" ____ ____ ____ ____ ____ ____ ____ ",
-		"||J |||o |||l |||e |||D |||e |||v ||",
-		"||__|||__|||__|||__|||__|||__|||__||",
-		"|/__\\|/__\\|/__\\|/__\\|/__\\|/__\\|/__\\|",
-	}
-
-	// Animated sparkles
-	sparkles := []string{"·", "+", "*", "✦", "·", "+"}
-	sparkleColors := []lipgloss.Color{Magenta, Cyan, Pink, Magenta, Cyan, Pink}
-
-	s1 := lipgloss.NewStyle().Foreground(sparkleColors[m.Frame%len(sparkleColors)]).Render(sparkles[m.Frame%len(sparkles)])
-	s2 := lipgloss.NewStyle().Foreground(sparkleColors[(m.Frame+2)%len(sparkleColors)]).Render(sparkles[(m.Frame+1)%len(sparkles)])
-	s3 := lipgloss.NewStyle().Foreground(sparkleColors[(m.Frame+4)%len(sparkleColors)]).Render(sparkles[(m.Frame+3)%len(sparkles)])
-
 	rightLines := []string{
-		"",
-		"  " + s1,
-	}
-	for i, line := range logo {
-		prefix := "  "
-		if i == 0 {
-			prefix = s2 + " "
-		}
-		if i == len(logo)-1 {
-			line = line + " " + s3
-		}
-		rightLines = append(rightLines, NameStyle.Render(prefix+line))
-	}
-	rightLines = append(rightLines,
 		"",
 		SubtitleStyle.Render("  "+t.Role),
 		"",
-		"  "+AccentStyle.Render(t.SongOfTheDay),
+		"  " + AccentStyle.Render(t.SongOfTheDay),
 		"",
 		fmt.Sprintf("  %s  %s",
 			AccentStyle.Render(t.SongTitle+":"),
@@ -284,7 +296,7 @@ func (m Model) viewSong(t Translations) string {
 			AccentStyle.Render(t.SongAlbum+":"),
 			lipgloss.NewStyle().Foreground(White).Render(song.Album)),
 		"",
-	)
+	}
 
 	if m.QRCode != "" {
 		rightLines = append(rightLines,
