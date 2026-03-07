@@ -47,12 +47,15 @@ type Model struct {
 	CoverColor   string
 	ColorMode    bool
 	CoverLoading bool
+	QRCode       string
 }
 
 func NewModel(songsPath, postsDir string) Model {
 	songs, _ := data.LoadSongs(songsPath)
 	posts, _ := data.LoadPosts(postsDir, "es")
 	todaySong := data.SongOfTheDay(songs)
+
+	qrStr, _ := art.GenerateQR(todaySong.URL)
 
 	return Model{
 		Lang:         LangES,
@@ -61,6 +64,7 @@ func NewModel(songsPath, postsDir string) Model {
 		PostsDir:     postsDir,
 		TodaySong:    todaySong,
 		CoverLoading: true,
+		QRCode:       qrStr,
 	}
 }
 
@@ -282,12 +286,15 @@ func (m Model) viewSong(t Translations) string {
 		"",
 	)
 
-	if song.URL != "" {
+	if m.QRCode != "" {
 		rightLines = append(rightLines,
 			"  "+DimStyle.Render(t.SongListenAt),
-			"  "+LinkStyle.Render(song.URL),
 			"",
 		)
+		for _, qrLine := range strings.Split(m.QRCode, "\n") {
+			rightLines = append(rightLines, "  "+qrLine)
+		}
+		rightLines = append(rightLines, "")
 	}
 
 	rightLines = append(rightLines,
@@ -300,7 +307,7 @@ func (m Model) viewSong(t Translations) string {
 		for len(loadingLines) < 27 {
 			loadingLines = append(loadingLines, "")
 		}
-		return buildSideBySide(loadingLines, rightLines, coverArtWidth)
+		return buildSideBySide(loadingLines, rightLines, coverArtWidth+2)
 	}
 
 	coverArt := m.CoverMono
@@ -318,6 +325,28 @@ func (m Model) viewSong(t Translations) string {
 	}
 
 	artLines := strings.Split(coverArt, "\n")
+	framedLines := m.addAnimatedFrame(artLines)
+	frameWidth := 0
+	for _, line := range framedLines {
+		w := visualWidth(line)
+		if w > frameWidth {
+			frameWidth = w
+		}
+	}
+
+	return buildSideBySide(framedLines, rightLines, frameWidth)
+}
+
+func (m Model) addAnimatedFrame(artLines []string) []string {
+	borderColors := []lipgloss.Color{Magenta, Cyan, Pink}
+	c1 := borderColors[m.Frame%len(borderColors)]
+	c2 := borderColors[(m.Frame+1)%len(borderColors)]
+	c3 := borderColors[(m.Frame+2)%len(borderColors)]
+
+	s1 := lipgloss.NewStyle().Foreground(c1)
+	s2 := lipgloss.NewStyle().Foreground(c2)
+	s3 := lipgloss.NewStyle().Foreground(c3)
+
 	artWidth := 0
 	for _, line := range artLines {
 		w := visualWidth(line)
@@ -326,7 +355,18 @@ func (m Model) viewSong(t Translations) string {
 		}
 	}
 
-	return buildSideBySide(artLines, rightLines, artWidth)
+	hBar := strings.Repeat("─", artWidth)
+	top := s1.Render("╭") + s2.Render(hBar) + s3.Render("╮")
+	bottom := s3.Render("╰") + s2.Render(hBar) + s1.Render("╯")
+
+	var framed []string
+	framed = append(framed, top)
+	for _, line := range artLines {
+		pad := artWidth - visualWidth(line)
+		framed = append(framed, s1.Render("│")+line+strings.Repeat(" ", pad)+s3.Render("│"))
+	}
+	framed = append(framed, bottom)
+	return framed
 }
 
 func (m Model) viewAbout(t Translations) string {
