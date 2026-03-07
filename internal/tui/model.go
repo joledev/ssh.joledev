@@ -91,7 +91,7 @@ func fetchCoverCmd(trackURL string) tea.Cmd {
 
 func fetchSpotifyCodeCmd(trackURL string) tea.Cmd {
 	return func() tea.Msg {
-		code, err := art.FetchSpotifyCode(trackURL, 50, 8)
+		code, err := art.FetchSpotifyCode(trackURL, 80)
 		return spotifyCodeMsg{code: code, err: err}
 	}
 }

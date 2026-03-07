@@ -5,16 +5,16 @@ import (
 	"image"
 	_ "image/jpeg"
 	_ "image/png"
+	"math"
 	"net/http"
 	"regexp"
-	"strings"
 	"time"
 )
 
 var spotifyTrackRegex = regexp.MustCompile(`track/([a-zA-Z0-9]+)`)
 
-// FetchSpotifyCode downloads a Spotify Code barcode and renders it using half-block characters.
-func FetchSpotifyCode(trackURL string, width, height int) (string, error) {
+// FetchSpotifyCode downloads a Spotify Code barcode and renders it as braille art.
+func FetchSpotifyCode(trackURL string, width int) (string, error) {
 	match := spotifyTrackRegex.FindStringSubmatch(trackURL)
 	if match == nil {
 		return "", fmt.Errorf("no track ID found in URL")
@@ -42,82 +42,99 @@ func FetchSpotifyCode(trackURL string, width, height int) (string, error) {
 		return "", fmt.Errorf("spotify code decode: %w", err)
 	}
 
-	return imageToBlocks(img, width, height), nil
+	return spotifyCodeToBraille(img, width), nil
 }
 
-// imageToBlocks renders an image using half-block unicode characters.
-// Each character represents 2 vertical pixels using ▀▄█ and space.
-// Much better than braille for geometric/barcode images.
-func imageToBlocks(img image.Image, width, rows int) string {
+// spotifyCodeToBraille renders a Spotify Code image as braille art
+// using parameters optimized for scanability (8A: contrast=1.5, sharpness=2.0, threshold=128).
+func spotifyCodeToBraille(img image.Image, width int) string {
 	bounds := img.Bounds()
 	srcW := bounds.Dx()
 	srcH := bounds.Dy()
 
 	charW := width
-	charH := rows * 2 // 2 pixels per row of half-blocks
-	if charH == 0 {
-		charH = int(float64(charW) * float64(srcH) / float64(srcW) * 2)
-		if charH%2 != 0 {
-			charH++
-		}
+	charH := int(float64(charW) * float64(srcH) / float64(srcW) * 0.5)
+	if charH < 1 {
+		charH = 1
 	}
 
-	// Resize to target pixel dimensions
-	pixels := make([][]bool, charH)
-	for y := 0; y < charH; y++ {
-		pixels[y] = make([]bool, charW)
-		for x := 0; x < charW; x++ {
-			// Area-average sampling
-			x0 := x * srcW / charW
-			y0 := y * srcH / charH
-			x1 := (x + 1) * srcW / charW
-			y1 := (y + 1) * srcH / charH
-			if x1 <= x0 {
-				x1 = x0 + 1
-			}
-			if y1 <= y0 {
-				y1 = y0 + 1
-			}
+	pixW := charW * 2
+	pixH := charH * 4
 
-			var lum float64
-			count := 0
-			for sy := y0; sy < y1 && sy < srcH; sy++ {
-				for sx := x0; sx < x1 && sx < srcW; sx++ {
-					r, g, b, _ := img.At(bounds.Min.X+sx, bounds.Min.Y+sy).RGBA()
-					lum += 0.299*float64(r) + 0.587*float64(g) + 0.114*float64(b)
-					count++
-				}
+	gray := resizeGray(img, pixW, pixH)
+	enhanceContrast(gray, pixW, pixH, 1.5)
+	sharpen(gray, pixW, pixH, 2.0)
+
+	// Simple threshold (no dithering — cleaner for barcodes)
+	for y := 0; y < pixH; y++ {
+		for x := 0; x < pixW; x++ {
+			if gray[y][x] < 128 {
+				gray[y][x] = 0
+			} else {
+				gray[y][x] = 255
 			}
-			if count > 0 {
-				lum /= float64(count) * 257
-			}
-			pixels[y][x] = lum < 128 // dark = true
 		}
 	}
 
 	var lines []string
-	for y := 0; y < charH; y += 2 {
-		var line strings.Builder
-		for x := 0; x < charW; x++ {
-			top := pixels[y][x]
-			bottom := false
-			if y+1 < charH {
-				bottom = pixels[y+1][x]
+	for cy := 0; cy < charH; cy++ {
+		var line []rune
+		for cx := 0; cx < charW; cx++ {
+			code := 0
+			for _, dot := range dotMap {
+				dx, dy, bit := dot[0], dot[1], dot[2]
+				px := cx*2 + dx
+				py := cy*4 + dy
+				if px >= pixW || py >= pixH {
+					continue
+				}
+				if gray[py][px] < 128 {
+					code |= bit
+				}
 			}
-
-			switch {
-			case top && bottom:
-				line.WriteRune('█')
-			case top && !bottom:
-				line.WriteRune('▀')
-			case !top && bottom:
-				line.WriteRune('▄')
-			default:
-				line.WriteRune(' ')
+			if code == 0 {
+				line = append(line, ' ')
+			} else {
+				line = append(line, rune(brailleBase+code))
 			}
 		}
-		lines = append(lines, line.String())
+		lines = append(lines, string(line))
 	}
 
-	return strings.Join(lines, "\n")
+	result := ""
+	for i, l := range lines {
+		if i > 0 {
+			result += "\n"
+		}
+		result += l
+	}
+	return result
+}
+
+// sharpen applies an unsharp mask to enhance edges.
+func sharpen(gray [][]float64, w, h int, amount float64) {
+	blurred := make([][]float64, h)
+	for y := 0; y < h; y++ {
+		blurred[y] = make([]float64, w)
+		for x := 0; x < w; x++ {
+			var sum float64
+			var count int
+			for dy := -1; dy <= 1; dy++ {
+				for dx := -1; dx <= 1; dx++ {
+					ny, nx := y+dy, x+dx
+					if ny >= 0 && ny < h && nx >= 0 && nx < w {
+						sum += gray[ny][nx]
+						count++
+					}
+				}
+			}
+			blurred[y][x] = sum / float64(count)
+		}
+	}
+	for y := 0; y < h; y++ {
+		for x := 0; x < w; x++ {
+			v := gray[y][x] + amount*(gray[y][x]-blurred[y][x])
+			gray[y][x] = math.Max(0, math.Min(255, v))
+		}
+	}
 }
