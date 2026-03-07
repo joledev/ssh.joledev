@@ -52,6 +52,7 @@ type Model struct {
 	CoverColor   string
 	ColorMode    bool
 	CoverLoading bool
+	CoverFailed  bool
 	SpotifyCode  string
 }
 
@@ -110,6 +111,9 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		if msg.err == nil {
 			m.CoverMono = msg.mono
 			m.CoverColor = msg.color
+			m.CoverFailed = false
+		} else {
+			m.CoverFailed = true
 		}
 		return m, nil
 
@@ -164,6 +168,14 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 		case "c", "C":
 			m.ColorMode = !m.ColorMode
+			return m, nil
+
+		case "r", "R":
+			if m.CoverFailed && !m.CoverLoading {
+				m.CoverLoading = true
+				m.CoverFailed = false
+				return m, tea.Batch(fetchCoverCmd(m.TodaySong.URL), fetchSpotifyCodeCmd(m.TodaySong.URL))
+			}
 			return m, nil
 
 		case "l", "L":
@@ -229,7 +241,11 @@ func (m Model) View() string {
 	}
 
 	nav := m.renderNav(t)
-	help := HelpStyle.Render("[<- -> nav · C color · L lang · q quit]")
+	helpText := "<- -> nav · C color · L lang · q quit"
+	if m.CoverFailed {
+		helpText = "<- -> nav · R reload · C color · L lang · q quit"
+	}
+	help := HelpStyle.Render("[" + helpText + "]")
 
 	if header != "" {
 		return fmt.Sprintf("%s\n%s\n\n %s\n\n %s\n", header, view, nav, help)
@@ -322,6 +338,12 @@ func (m Model) viewSong(t Translations) string {
 			rightLines = append(rightLines, "  "+codeLine)
 		}
 		rightLines = append(rightLines, "")
+	} else if song.URL != "" {
+		rightLines = append(rightLines,
+			"  "+DimStyle.Render(t.SongListenAt),
+			"  "+LinkStyle.Render(song.URL),
+			"",
+		)
 	}
 
 	rightLines = append(rightLines,
@@ -343,6 +365,13 @@ func (m Model) viewSong(t Translations) string {
 	}
 
 	if coverArt == "" {
+		if m.CoverFailed {
+			failLines := []string{"", "", DimStyle.Render("  Cover art unavailable"), DimStyle.Render("  [R to reload]")}
+			for len(failLines) < 20 {
+				failLines = append(failLines, "")
+			}
+			return buildSideBySide(failLines, rightLines, coverArtWidth+2)
+		}
 		var s strings.Builder
 		s.WriteString("\n")
 		for _, line := range rightLines {
